@@ -6,10 +6,10 @@ addons:
     packages:
     - python-pip
 
-before_install:
+install:
   - sudo pip install pyang==1.7.3
 
-install:
+script:
   - gradle check --info
   - gradle jacocoTestReport
 

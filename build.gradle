@@ -1,5 +1,7 @@
 apply plugin: 'base'
 
+
+
 allprojects {
     apply plugin: 'java'
     apply plugin: 'jacoco'
@@ -55,4 +57,8 @@ task jacocoRootReport(type: JacocoReport) {
             fileTree(dir: it, exclude: 'io/netconfessor/gen/**')
         })
     }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion  = '4.7'
 }
