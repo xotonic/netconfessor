@@ -1,0 +1,15 @@
+apply plugin: 'base'
+
+subprojects {
+    apply plugin: 'java'
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        testCompile 'junit:junit:4.12'
+    }
+
+    sourceCompatibility = '1.8'
+}

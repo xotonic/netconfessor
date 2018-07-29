@@ -1,0 +1,25 @@
+module nested-enum {
+  namespace "jnc:test:nested-enum";
+  prefix "ne";
+
+   leaf nested-enum-leaf {
+        type enumeration {
+          enum server {
+            description
+              "server entry";
+          }
+          enum peer {
+            description
+              "peer entry";
+          }
+          enum pool {
+            description
+              "pool entry";
+          }
+        }
+        default server;
+        description
+          "leaf with self type declaration";
+   }
+
+}

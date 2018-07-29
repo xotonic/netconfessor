@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = "io.netconfessor"
+version = "0.1"
+
+
+repositories {
+
+    maven { url "http://lab3.eltex.loc:8888/repository/snapshots" }
+    maven { url "http://lab3.eltex.loc:8888/repository/internal/" }
+    maven { url "http://download.java.net/maven/2/" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'ch.ethz.ganymed', name: 'ganymed-ssh2', version:'262'
+}

@@ -1,0 +1,5 @@
+<config xmlns="http://eltex.org/ap">
+    <snmp>
+        <informsink>2.2.2.2</informsink>
+    </snmp>
+</config>

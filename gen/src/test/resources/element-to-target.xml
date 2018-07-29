@@ -1,0 +1,14 @@
+<config xmlns="http://eltex.org/ap">
+    <snmp>
+        <enable>1</enable>
+        <rocommunity>public</rocommunity>
+        <rwcommunity>private</rwcommunity>
+        <trapsink></trapsink>
+        <trap2sink></trap2sink>
+        <informsink>1.1.1.1</informsink>
+        <sysname>WOP-2ac-LR5</sysname>
+        <syscontact>Contact</syscontact>
+        <syslocation>Russia</syslocation>
+        <trapcommunity>trap</trapcommunity>
+    </snmp>
+</config>

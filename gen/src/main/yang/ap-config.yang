@@ -1,0 +1,1801 @@
+module ap-config {
+  namespace "http://eltex.org/ap";
+  prefix ap-config;
+
+  import ietf-inet-types {
+    prefix inet;
+  }
+
+  organization
+    "Eltex";
+  description
+    "WOP-2ac-LR5 configuration module";
+
+  revision 2018-01-10 {
+    description
+      "Initial revision.";
+  }
+
+  feature custom-interfaces {
+    description
+      "This feature means that the device supports of interfaces using custom model.";
+  }
+
+  extension eltex-value-list {
+    description
+      "value-list extension";
+  }
+
+  typedef enum_eth_vlan_wlan_bridge_vap_gre {
+    type enumeration {
+      enum "eth";
+      enum "vlan";
+      enum "wlan";
+      enum "bridge";
+      enum "vap";
+      enum "gre";
+    }
+  }
+
+  typedef enum_0_1 {
+    type enumeration {
+      enum "0";
+      enum "1";
+    }
+  }
+
+  typedef enum_static-ip_dhcp {
+    type enumeration {
+      enum "static-ip";
+      enum "dhcp";
+    }
+  }
+
+  typedef enum_blacklist_whitelist_off {
+    type enumeration {
+      enum "blacklist";
+      enum "whitelist";
+      enum "off";
+    }
+  }
+
+  typedef enum_off_pps_kbps {
+    type enumeration {
+      enum "off";
+      enum "pps";
+      enum "kbps";
+    }
+  }
+
+  typedef enum_auto_0_1_2_3_4_5_6_7 {
+    type enumeration {
+      enum "auto";
+      enum "0";
+      enum "1";
+      enum "2";
+      enum "3";
+      enum "4";
+      enum "5";
+      enum "6";
+      enum "7";
+    }
+  }
+
+  typedef enum_off_WEP_WPA_WPA2_WPA_WPA2_WPA_1X_WPA2_1X_WPA_WPA2_1X {
+    type enumeration {
+      enum "off";
+      enum "WEP";
+      enum "WPA";
+      enum "WPA2";
+      enum "WPA_WPA2";
+      enum "WPA_1X";
+      enum "WPA2_1X";
+      enum "WPA_WPA2_1X";
+    }
+  }
+
+  typedef enum_ap_sta_radio {
+    type enumeration {
+      enum "ap";
+      enum "sta";
+      enum "radio";
+    }
+  }
+
+  typedef enum_RU_US {
+    type enumeration {
+      enum "RU";
+      enum "US";
+    }
+  }
+
+  typedef enum_a_an_ac {
+    type enumeration {
+      enum "a";
+      enum "an";
+      enum "ac";
+    }
+  }
+
+  typedef enum_5_10_20_40_80 {
+    type enumeration {
+      enum "5";
+      enum "10";
+      enum "20";
+      enum "40";
+      enum "80";
+    }
+  }
+
+  typedef enum_upper_lower {
+    type enumeration {
+      enum "upper";
+      enum "lower";
+    }
+  }
+
+  typedef enum_disabled_auto_forced {
+    type enumeration {
+      enum "disabled";
+      enum "auto";
+      enum "forced";
+    }
+  }
+
+  typedef enum_1_3_7_15_31_63_127_255_511_1023 {
+    type enumeration {
+      enum "1";
+      enum "3";
+      enum "7";
+      enum "15";
+      enum "31";
+      enum "63";
+      enum "127";
+      enum "255";
+      enum "511";
+      enum "1023";
+    }
+  }
+
+  typedef enum_off_manual_auto {
+    type enumeration {
+      enum "off";
+      enum "manual";
+      enum "auto";
+    }
+  }
+
+  typedef enum_blacklist_whitelist {
+    type enumeration {
+      enum "blacklist";
+      enum "whitelist";
+    }
+  }
+
+  typedef enum_manual_ntp {
+    type enumeration {
+      enum "manual";
+      enum "ntp";
+    }
+  }
+
+  container config {
+    presence "Indicates the ap-config service is available";
+    container config-description {
+      leaf version {
+        type string;
+        description
+          "Configuration version";
+      }
+    }
+    list interface {
+      key "name";
+      leaf name {
+        type string;
+        description
+          "Interface name";
+      }
+      container common {
+        leaf type {
+          type enum_eth_vlan_wlan_bridge_vap_gre;
+          description
+            "Interface type";
+        }
+        leaf route-table {
+          type int32 {
+            range "0 .. 254";
+          }
+        }
+        leaf mac-addr {
+          type string {
+            pattern "([0-9A-Fa-f]{2}[:]){5}([0-9A-Fa-f]{2})";
+          }
+        }
+        leaf enabled {
+          type enum_0_1;
+          description
+            "Enable interface";
+        }
+        leaf wan {
+          type enum_0_1;
+          description
+            "WAN mode on interface";
+        }
+        leaf masquerade {
+          type enum_0_1;
+          description
+            "enable masquerading on interface";
+        }
+        leaf protocol {
+          type enum_static-ip_dhcp;
+          description
+            "Setup protocol for configuring IP params";
+        }
+        leaf disable-broadcast-dhcp {
+          type enum_0_1;
+          description
+            "Request unicast replies for DHCP";
+        }
+        leaf static-ip {
+          type inet:ip-address;
+          description
+            "Static IP address";
+        }
+        leaf netmask {
+          type inet:ip-address;
+          description
+            "Netmask for static IP mode";
+        }
+        leaf dns-server-1 {
+          type inet:ip-address;
+          description
+            "DNS server IP address";
+        }
+        leaf dns-server-2 {
+          type inet:ip-address;
+          description
+            "DNS server IP address";
+        }
+        container dhcp-server {
+          leaf enable {
+            type enum_0_1;
+            description
+              "enable DHCP server on current interface";
+          }
+          leaf start-ip {
+            type inet:ip-address;
+          }
+          leaf end-ip {
+            type inet:ip-address;
+          }
+          leaf netmask {
+            type inet:ip-address;
+          }
+          leaf dns {
+            type inet:ip-address;
+          }
+          leaf router {
+            type inet:ip-address;
+          }
+          leaf lease-time {
+            type int32 {
+              range "1 .. 86400";
+            }
+          }
+          list static-lease {
+            key "name";
+            leaf name {
+              type string {
+                pattern "([0-9A-Fa-f]{2}[:]){5}([0-9A-Fa-f]{2})";
+              }
+            }
+            leaf ip-address {
+              type inet:ip-address;
+            }
+          }
+        }
+        container access-rules {
+          leaf telnet {
+            type enum_0_1;
+            description
+              "Interface specific access rule for Telnet";
+          }
+          leaf ssh {
+            type enum_0_1;
+            description
+              "Interface specific access rule for SSH";
+          }
+          leaf snmp {
+            type enum_0_1;
+            description
+              "Interface specific access rule for SNMP";
+          }
+          leaf netconf {
+            type enum_0_1;
+            description
+              "Interface specific access rule for NETCONF";
+          }
+          leaf web {
+            type enum_0_1;
+            description
+              "Interface specific access rule for Web";
+          }
+          leaf web-https {
+            type enum_0_1;
+            description
+              "Interface specific access rule for Web https-port";
+          }
+        }
+      }
+      container eth;
+      container bridge {
+        list port {
+          key "name";
+          leaf name {
+            type string;
+            description
+              "Bridge port name";
+          }
+        }
+      }
+      container gre {
+        leaf basic {
+          type string;
+          description
+            "Basic interface name";
+        }
+        leaf remote {
+          type inet:ip-address;
+          description
+            "Remote IP address";
+        }
+        leaf linkname {
+          type string;
+          description
+            "OS interface name";
+        }
+      }
+      container vlan {
+        leaf basic {
+          type string;
+          description
+            "Basic interface name";
+        }
+        leaf vlan-id {
+          type int32 {
+            range "1 .. 4094";
+          }
+          description
+            "VLAN ID";
+        }
+      }
+      container vap {
+        leaf basic {
+          type string;
+          description
+            "Basic interface name";
+        }
+        leaf sta-limit {
+          type int32 {
+            range "0 .. 64";
+          }
+          description
+            "STA count limit";
+        }
+        leaf vap-id {
+          type int32 {
+            range "0 .. 3";
+          }
+          description
+            "VAP ID";
+        }
+        container acl {
+          leaf mode {
+            type enum_blacklist_whitelist_off;
+            description
+              "ACL work-mode";
+          }
+          list mac {
+            key "name";
+            leaf name {
+              type string {
+                pattern "([0-9A-Fa-f]{2}[:]){5}([0-9A-Fa-f]{2})";
+              }
+              description
+                "STA MAC address name";
+            }
+          }
+        }
+        leaf inactivity-timeout {
+          type int32 {
+            range "0 .. 2000000";
+          }
+          description
+            "STA inactivity timeout";
+        }
+        container shaper-per-vap-tx {
+          leaf mode {
+            type enum_off_pps_kbps;
+            description
+              "Shaper work-mode";
+          }
+          leaf value {
+            type int32;
+            description
+              "Shaper value";
+          }
+        }
+        container shaper-per-vap-rx {
+          leaf mode {
+            type enum_off_pps_kbps;
+            description
+              "Shaper work-mode";
+          }
+          leaf value {
+            type int32;
+            description
+              "Shaper value";
+          }
+        }
+        container shaper-per-sta-tx {
+          leaf mode {
+            type enum_off_pps_kbps;
+            description
+              "Shaper work-mode";
+          }
+          leaf value {
+            type int32;
+            description
+              "Shaper value";
+          }
+        }
+        container shaper-per-sta-rx {
+          leaf mode {
+            type enum_off_pps_kbps;
+            description
+              "Shaper work-mode";
+          }
+          leaf value {
+            type int32;
+            description
+              "Shaper value";
+          }
+        }
+        leaf hidden {
+          type enum_0_1;
+          description
+            "Hidden AP mode";
+        }
+        leaf station-isolation {
+          type enum_0_1;
+          description
+            "Station isolation";
+        }
+        leaf vlan-id {
+          type int32 {
+            range "0 .. 4094";
+          }
+          description
+            "VLAN ID";
+        }
+        leaf vlan-priority {
+          type enum_auto_0_1_2_3_4_5_6_7;
+          description
+            "VLAN priority";
+        }
+        leaf vlan-trunk {
+          type enum_0_1;
+          description
+            "VLAN trunk feature";
+        }
+        leaf vlan-support {
+          type enum_0_1;
+          description
+            "Realtek specific option, need always 1 for VLAN support";
+        }
+        leaf priority-by-dscp {
+          type int32 {
+            range "0 .. 1";
+          }
+          description
+            "Use DSCP for priority packets";
+        }
+        leaf security-mode {
+          type enum_off_WEP_WPA_WPA2_WPA_WPA2_WPA_1X_WPA2_1X_WPA_WPA2_1X;
+          description
+            "Security mode";
+        }
+        leaf key-wep {
+          type string;
+          description
+            "Key for WEP mode";
+        }
+        leaf key-wpa {
+          type string {
+            pattern "[^А-Яа-я]{8,63}";
+          }
+          description
+            "Key for WPA PSK mode";
+        }
+        leaf ssid {
+          type string {
+            pattern ".{0,32}";
+          }
+          description
+            "SSID";
+        }
+        container radius {
+          leaf auth-port {
+            type int32 {
+              range "1 .. 65535";
+            }
+            description
+              "RADIUS authentication server port";
+          }
+          leaf auth-address {
+            type inet:host;
+            description
+              "RADIUS authentication server address";
+          }
+          leaf auth-password {
+            type string {
+              pattern "[^А-Яа-я]{1,64}";
+            }
+            description
+              "RADIUS authentication shared secret";
+          }
+          leaf acct-enable {
+            type enum_0_1;
+            description
+              "Enable accounting";
+          }
+          leaf acct-port {
+            type int32 {
+              range "1 .. 65535";
+            }
+            description
+              "RADIUS accounting server port";
+          }
+          leaf acct-address {
+            type inet:host;
+            description
+              "RADIUS accounting server address";
+          }
+          leaf acct-password {
+            type string {
+              pattern "[^А-Яа-я]{1,64}";
+            }
+            description
+              "RADIUS accounting shared secret";
+          }
+          leaf acct-periodic {
+            type enum_0_1;
+            description
+              "Enable periodic accounting updates";
+          }
+          leaf acct-interval {
+            type int32 {
+              range "0 .. 86400";
+            }
+            description
+              "RADIUS periodic accounting update interval";
+          }
+          leaf domain {
+            type inet:domain-name;
+            description
+              "RADIUS authentication domain";
+          }
+        }
+      }
+      container wlan {
+        leaf mode {
+          type enum_ap_sta_radio;
+          description
+            "AP/STA mode of WLAN interface";
+        }
+        leaf rssi-indication {
+          type enum_0_1;
+          description
+            "Indicate RSSI from current interface by RSSI LEDs";
+        }
+        container radio {
+          leaf country {
+            type enum_RU_US;
+            description
+              "Country code";
+          }
+          leaf work-mode {
+            type enum_a_an_ac;
+            description
+              "IEEE 802.11 operation mode";
+          }
+          leaf bandwidth {
+            type enum_5_10_20_40_80;
+            description
+              "Channel bandwidth";
+          }
+          leaf disable-atf {
+            type enum_0_1;
+            description
+              "Disable ATF";
+          }
+          leaf tdma {
+            type enum_0_1;
+            description
+              "TDMA mode";
+          }
+          leaf tdma-tx-duration {
+            type int32 {
+              range "1 .. 65535";
+            }
+            description
+              "TDMA TX duration";
+          }
+          leaf atf-iftime {
+            type int32;
+            description
+              "ATF iftime";
+          }
+          leaf control-sideband {
+            type enum_upper_lower;
+            description
+              "Primary channel (applicable when bandwidth is 40 MHz)";
+          }
+          leaf tx-power {
+            type int32;
+            description
+              "TX power";
+          }
+          leaf wmm {
+            type enum_0_1;
+            description
+              "WMM feature";
+          }
+          leaf vap-enable {
+            type enum_0_1;
+            description
+              "Enable VAP support";
+          }
+          leaf fragmentation-threshold {
+            type int32 {
+              range "256 .. 2346";
+            }
+            description
+              "Fragmentation threshold";
+          }
+          leaf rts-threshold {
+            type int32 {
+              range "0 .. 65536";
+            }
+            description
+              "RTS threshold";
+          }
+          leaf short-preamble {
+            type enum_0_1;
+            description
+              "Short preamble";
+          }
+          leaf aggregation {
+            type enum_0_1;
+            description
+              "Aggregation";
+          }
+          leaf sgi {
+            type enum_0_1;
+            description
+              "Short guard interval";
+          }
+          leaf stbc {
+            type enum_0_1;
+            description
+              "STBC encoding";
+          }
+          leaf obss-coex {
+            type enum_0_1;
+            description
+              "OBSS coexistance";
+          }
+          leaf beamforming {
+            type enum_0_1;
+            description
+              "Beamforming";
+          }
+          leaf ack-timeout {
+            type int32 {
+              range "0 .. 255";
+            }
+            description
+              "ACK timeout";
+          }
+          leaf protection-disabled {
+            type enum_0_1;
+            description
+              "Protection mode";
+          }
+          leaf channel {
+            type int32;
+            description
+              "Channel";
+          }
+          leaf enable-fixed-rate {
+            type enum_0_1;
+            description
+              "Enable fixed TX rate";
+          }
+          leaf fixed-rate {
+            type string;
+            description
+              "Fixed TX rate";
+          }
+          container rates {
+            container basic {
+              leaf rate-6 {
+                type enum_0_1;
+                description
+                  "6 mbps rate";
+              }
+              leaf rate-9 {
+                type enum_0_1;
+                description
+                  "9 mbps rate";
+              }
+              leaf rate-12 {
+                type enum_0_1;
+                description
+                  "12 mbps rate";
+              }
+              leaf rate-18 {
+                type enum_0_1;
+                description
+                  "18 mbps rate";
+              }
+              leaf rate-24 {
+                type enum_0_1;
+                description
+                  "24 mbps rate";
+              }
+              leaf rate-36 {
+                type enum_0_1;
+                description
+                  "36 mbps rate";
+              }
+              leaf rate-48 {
+                type enum_0_1;
+                description
+                  "48 mbps rate";
+              }
+              leaf rate-54 {
+                type enum_0_1;
+                description
+                  "54 mbps rate";
+              }
+            }
+            container supported {
+              leaf rate-6 {
+                type enum_0_1;
+                description
+                  "6 mbps rate";
+              }
+              leaf rate-9 {
+                type enum_0_1;
+                description
+                  "9 mbps rate";
+              }
+              leaf rate-12 {
+                type enum_0_1;
+                description
+                  "12 mbps rate";
+              }
+              leaf rate-18 {
+                type enum_0_1;
+                description
+                  "18 mbps rate";
+              }
+              leaf rate-24 {
+                type enum_0_1;
+                description
+                  "24 mbps rate";
+              }
+              leaf rate-36 {
+                type enum_0_1;
+                description
+                  "36 mbps rate";
+              }
+              leaf rate-48 {
+                type enum_0_1;
+                description
+                  "48 mbps rate";
+              }
+              leaf rate-54 {
+                type enum_0_1;
+                description
+                  "54 mbps rate";
+              }
+            }
+          }
+          leaf tx-broadcast-limit {
+            type int32 {
+              range "0 .. 2000000000";
+            }
+            description
+              "TX broadcast limit";
+          }
+          leaf dfs {
+            type enum_disabled_auto_forced;
+            description
+              "DFS support";
+          }
+          leaf fbwa-mode {
+            type enum_0_1;
+            description
+              "Fixed broadband wireless access mode";
+          }
+          leaf beacon-interval {
+            type int32 {
+              range "20 .. 2000";
+            }
+            description
+              "Beacon interval";
+          }
+          container qos {
+            leaf enable {
+              type enum_0_1;
+              description
+                "Enable/disable QoS";
+            }
+            container edca-ap {
+              container bk {
+                leaf acm {
+                  type int32 {
+                    range "0 .. 255";
+                  }
+                  description
+                    "Admission Control Mandatory";
+                }
+                leaf aifs {
+                  type int32 {
+                    range "1 .. 255";
+                  }
+                  description
+                    "Arbitration inter-frame space";
+                }
+                leaf cwmin {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window minimum";
+                }
+                leaf cwmax {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window maximum";
+                }
+                leaf txop {
+                  type int32 {
+                    range "0 .. 65535";
+                  }
+                  description
+                    "Transmit Opportunity";
+                }
+              }
+              container be {
+                leaf acm {
+                  type int32 {
+                    range "0 .. 255";
+                  }
+                  description
+                    "Admission Control Mandatory";
+                }
+                leaf aifs {
+                  type int32 {
+                    range "1 .. 255";
+                  }
+                  description
+                    "Arbitration inter-frame space";
+                }
+                leaf cwmin {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window minimum";
+                }
+                leaf cwmax {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window maximum";
+                }
+                leaf txop {
+                  type int32 {
+                    range "0 .. 65535";
+                  }
+                  description
+                    "Transmit Opportunity";
+                }
+              }
+              container vi {
+                leaf acm {
+                  type int32 {
+                    range "0 .. 255";
+                  }
+                  description
+                    "Admission Control Mandatory";
+                }
+                leaf aifs {
+                  type int32 {
+                    range "1 .. 255";
+                  }
+                  description
+                    "Arbitration inter-frame space";
+                }
+                leaf cwmin {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window minimum";
+                }
+                leaf cwmax {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window maximum";
+                }
+                leaf txop {
+                  type int32 {
+                    range "0 .. 65535";
+                  }
+                  description
+                    "Transmit Opportunity";
+                }
+              }
+              container vo {
+                leaf acm {
+                  type int32 {
+                    range "0 .. 255";
+                  }
+                  description
+                    "Admission Control Mandatory";
+                }
+                leaf aifs {
+                  type int32 {
+                    range "1 .. 255";
+                  }
+                  description
+                    "Arbitration inter-frame space";
+                }
+                leaf cwmin {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window minimum";
+                }
+                leaf cwmax {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window maximum";
+                }
+                leaf txop {
+                  type int32 {
+                    range "0 .. 65535";
+                  }
+                  description
+                    "Transmit Opportunity";
+                }
+              }
+            }
+            container edca-sta {
+              container bk {
+                leaf acm {
+                  type int32 {
+                    range "0 .. 255";
+                  }
+                  description
+                    "Admission Control Mandatory";
+                }
+                leaf aifs {
+                  type int32 {
+                    range "1 .. 255";
+                  }
+                  description
+                    "Arbitration inter-frame space";
+                }
+                leaf cwmin {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window minimum";
+                }
+                leaf cwmax {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window maximum";
+                }
+                leaf txop {
+                  type int32 {
+                    range "0 .. 65535";
+                  }
+                  description
+                    "Transmit Opportunity";
+                }
+              }
+              container be {
+                leaf acm {
+                  type int32 {
+                    range "0 .. 255";
+                  }
+                  description
+                    "Admission Control Mandatory";
+                }
+                leaf aifs {
+                  type int32 {
+                    range "1 .. 255";
+                  }
+                  description
+                    "Arbitration inter-frame space";
+                }
+                leaf cwmin {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window minimum";
+                }
+                leaf cwmax {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window maximum";
+                }
+                leaf txop {
+                  type int32 {
+                    range "0 .. 65535";
+                  }
+                  description
+                    "Transmit Opportunity";
+                }
+              }
+              container vi {
+                leaf acm {
+                  type int32 {
+                    range "0 .. 255";
+                  }
+                  description
+                    "Admission Control Mandatory";
+                }
+                leaf aifs {
+                  type int32 {
+                    range "1 .. 255";
+                  }
+                  description
+                    "Arbitration inter-frame space";
+                }
+                leaf cwmin {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window minimum";
+                }
+                leaf cwmax {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window maximum";
+                }
+                leaf txop {
+                  type int32 {
+                    range "0 .. 65535";
+                  }
+                  description
+                    "Transmit Opportunity";
+                }
+              }
+              container vo {
+                leaf acm {
+                  type int32 {
+                    range "0 .. 255";
+                  }
+                  description
+                    "Admission Control Mandatory";
+                }
+                leaf aifs {
+                  type int32 {
+                    range "1 .. 255";
+                  }
+                  description
+                    "Arbitration inter-frame space";
+                }
+                leaf cwmin {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window minimum";
+                }
+                leaf cwmax {
+                  type enum_1_3_7_15_31_63_127_255_511_1023;
+                  description
+                    "Contention window maximum";
+                }
+                leaf txop {
+                  type int32 {
+                    range "0 .. 65535";
+                  }
+                  description
+                    "Transmit Opportunity";
+                }
+              }
+            }
+          }
+        }
+        container sta {
+          leaf security-mode {
+            type enum_off_WEP_WPA_WPA2_WPA_WPA2_WPA_1X_WPA2_1X_WPA_WPA2_1X;
+            description
+              "Security mode";
+          }
+          leaf client-shaper-mode {
+            type enum_off_manual_auto;
+            description
+              "Client side shaper mode";
+          }
+          leaf shaper-limit {
+            type int32 {
+              range "0 .. 1000000000";
+            }
+            description
+              "Client side shaper limit";
+          }
+          leaf key-wep {
+            type string;
+            description
+              "Key for WEP mode";
+          }
+          leaf key-wpa {
+            type string {
+              pattern "[^А-Яа-я]{8,63}";
+            }
+            description
+              "Key for WPA PSK mode";
+          }
+          leaf ssid {
+            type string {
+              pattern ".{0,32}";
+            }
+            description
+              "SSID";
+          }
+          leaf vlan-support {
+            type enum_0_1;
+            description
+              "Realtek specific option, need always 1 for VLAN support";
+          }
+          container radius {
+            leaf username {
+              type string;
+              description
+                "RADIUS authentication username";
+            }
+            leaf password {
+              type string {
+                pattern "[^А-Яа-я]{1,64}";
+              }
+              description
+                "RADIUS authentication password";
+            }
+          }
+        }
+        container ap {
+          container acl {
+            leaf mode {
+              type enum_blacklist_whitelist;
+              description
+                "ACL work-mode";
+            }
+            list mac {
+              key "name";
+              leaf name {
+                type string {
+                  pattern "([0-9A-Fa-f]{2}[:]){5}([0-9A-Fa-f]{2})";
+                }
+                description
+                  "STA MAC address name";
+              }
+            }
+          }
+          leaf station-isolation {
+            type enum_0_1;
+            description
+              "Station isolation";
+          }
+          leaf inactivity-timeout {
+            type int32 {
+              range "0 .. 2000000";
+            }
+            description
+              "STA inactivity timeout";
+          }
+          container shaper-per-vap-tx {
+            leaf mode {
+              type enum_off_pps_kbps;
+              description
+                "Shaper work-mode";
+            }
+            leaf value {
+              type int32;
+              description
+                "Shaper value";
+            }
+          }
+          container shaper-per-vap-rx {
+            leaf mode {
+              type enum_off_pps_kbps;
+              description
+                "Shaper work-mode";
+            }
+            leaf value {
+              type int32;
+              description
+                "Shaper value";
+            }
+          }
+          container shaper-per-sta-tx {
+            leaf mode {
+              type enum_off_pps_kbps;
+              description
+                "Shaper work-mode";
+            }
+            leaf value {
+              type int32;
+              description
+                "Shaper value";
+            }
+          }
+          container shaper-per-sta-rx {
+            leaf mode {
+              type enum_off_pps_kbps;
+              description
+                "Shaper work-mode";
+            }
+            leaf value {
+              type int32;
+              description
+                "Shaper value";
+            }
+          }
+          leaf vlan-id {
+            type int32 {
+              range "0 .. 4094";
+            }
+            description
+              "VLAN ID";
+          }
+          leaf vlan-priority {
+            type enum_auto_0_1_2_3_4_5_6_7;
+            description
+              "VLAN priority";
+          }
+          leaf vlan-trunk {
+            type enum_0_1;
+            description
+              "VLAN trunk feature";
+          }
+          leaf vlan-support {
+            type enum_0_1;
+            description
+              "Realtek specific option, need always 1 for VLAN support";
+          }
+          leaf priority-by-dscp {
+            type int32 {
+              range "0 .. 1";
+            }
+            description
+              "Use DSCP for priority packets";
+          }
+          leaf security-mode {
+            type enum_off_WEP_WPA_WPA2_WPA_WPA2_WPA_1X_WPA2_1X_WPA_WPA2_1X;
+            description
+              "Security mode";
+          }
+          leaf hidden {
+            type enum_0_1;
+            description
+              "Hidden AP mode";
+          }
+          leaf sta-limit {
+            type int32 {
+              range "0 .. 64";
+            }
+            description
+              "STA count limit";
+          }
+          leaf iapp {
+            type enum_0_1;
+            description
+              "IAPP";
+          }
+          leaf key-wep {
+            type string;
+            description
+              "Key for WEP mode";
+          }
+          leaf key-wpa {
+            type string {
+              pattern "[^А-Яа-я]{8,63}";
+            }
+            description
+              "Key for WPA PSK mode";
+          }
+          leaf ssid {
+            type string {
+              pattern ".{0,32}";
+            }
+            description
+              "SSID";
+          }
+          container radius {
+            leaf auth-port {
+              type int32 {
+                range "1 .. 65535";
+              }
+              description
+                "RADIUS authentication server port";
+            }
+            leaf auth-address {
+              type inet:host;
+              description
+                "RADIUS authentication server address";
+            }
+            leaf domain {
+              type inet:domain-name;
+              description
+                "RADIUS authentication domain";
+            }
+            leaf auth-password {
+              type string {
+                pattern "[^А-Яа-я]{1,64}";
+              }
+              description
+                "RADIUS authentication shared secret";
+            }
+            leaf acct-enable {
+              type enum_0_1;
+              description
+                "Enable accounting";
+            }
+            leaf acct-port {
+              type int32 {
+                range "1 .. 65535";
+              }
+              description
+                "RADIUS accounting server port";
+            }
+            leaf acct-periodic {
+              type enum_0_1;
+              description
+                "Enable periodic accounting updates";
+            }
+            leaf acct-interval {
+              type int32 {
+                range "0 .. 86400";
+              }
+              description
+                "RADIUS periodic accounting update interval";
+            }
+            leaf acct-address {
+              type inet:host;
+              description
+                "RADIUS accounting server address";
+            }
+            leaf acct-password {
+              type string {
+                pattern "[^А-Яа-я]{1,64}";
+              }
+              description
+                "RADIUS accounting shared secret";
+            }
+          }
+        }
+      }
+    }
+    container web-configurator {
+      leaf enable {
+        type enum_0_1;
+        description
+          "Enable or disable web interface";
+      }
+      leaf http-port {
+        type int32;
+        description
+          "HTTP port";
+      }
+      leaf https-port {
+        type int32;
+        description
+          "HTTPS port";
+      }
+    }
+    container authentication {
+      leaf admin-password {
+        type string {
+          pattern "[^А-Яа-я]{1,64}";
+        }
+        description
+          "Admin password";
+      }
+    }
+    container snmp {
+      leaf enable {
+        type enum_0_1;
+        description
+          "Enable SNMP";
+      }
+      leaf rocommunity {
+        type string;
+        description
+          "RO community";
+      }
+      leaf rwcommunity {
+        type string;
+        description
+          "RW community";
+      }
+      leaf trapsink {
+        type string;
+        description
+          "trapsink";
+      }
+      leaf trap2sink {
+        type string;
+        description
+          "trap2sink";
+      }
+      leaf informsink {
+        type string;
+        description
+          "informsink";
+      }
+      leaf sysname {
+        type string;
+        description
+          "System name";
+      }
+      leaf syscontact {
+        type string;
+        description
+          "System contact";
+      }
+      leaf syslocation {
+        type string;
+        description
+          "System location";
+      }
+      leaf trapcommunity {
+        type string;
+        description
+          "Trap community";
+      }
+    }
+    container netconf {
+      leaf enable {
+        type enum_0_1;
+        description
+          "Enable NETCONF";
+      }
+    }
+    container date-time {
+      leaf mode {
+        type enum_manual_ntp;
+        description
+          "Setup date-time mode";
+      }
+      container common {
+        leaf timezone {
+          type string;
+          description
+            "Timezone of the system";
+        }
+        leaf dstenable {
+          type enum_0_1;
+          description
+            "Daylight saving time enable";
+        }
+        leaf dststart {
+          type string;
+          description
+            "Daylight saving time start";
+        }
+        leaf dstend {
+          type string;
+          description
+            "Daylight saving time stop";
+        }
+        leaf dstoffset {
+          type int32;
+          description
+            "Daylight saving time offset";
+        }
+      }
+      container manual;
+      container ntp {
+        leaf server {
+          type inet:host;
+          description
+            "NTP server address";
+        }
+      }
+    }
+    container trace {
+      container networkd {
+        leaf error {
+          type enum_0_1;
+          description
+            "Toggle error messages";
+        }
+        leaf warn {
+          type enum_0_1;
+          description
+            "Toggle warning messages";
+        }
+        leaf info {
+          type enum_0_1;
+          description
+            "Toggle info messages";
+        }
+        leaf debug {
+          type enum_0_1;
+          description
+            "Toggle debug messages";
+        }
+        leaf traffic {
+          type enum_0_1;
+          description
+            "Toggle messages about traffic";
+        }
+      }
+    }
+    container system {
+      leaf global-station-isolation {
+        type enum_0_1;
+        description
+          "Full isolation";
+      }
+    }
+    list route {
+      key "name";
+      leaf name {
+        type string;
+        description
+          "Route name";
+      }
+      leaf destination {
+        type inet:ip-address;
+        description
+          "Route destination address";
+      }
+      leaf netmask {
+        type inet:ip-address;
+        description
+          "Route netmask";
+      }
+      leaf gateway {
+        type inet:ip-address;
+        description
+          "Route gateway";
+      }
+    }
+  }
+  container monitoring {
+    config false;
+    list arp {
+      key "name";
+      leaf name {
+        type string;
+      }
+      leaf ip {
+        type string;
+      }
+      leaf mac {
+        type string;
+      }
+    }
+    list route {
+      key "name";
+      leaf name {
+        type string;
+      }
+      leaf interface {
+        type string;
+      }
+      leaf destination {
+        type string;
+      }
+      leaf gateway {
+        type string;
+      }
+      leaf mask {
+        type string;
+      }
+      leaf flags {
+        type string;
+      }
+    }
+    list wifi-client {
+      key "name";
+      leaf name {
+        type string;
+      }
+      leaf hw-addr {
+        type string;
+      }
+      leaf rssi {
+        type int32;
+      }
+      leaf snr {
+        type int32;
+      }
+      leaf tx-rate {
+        type string;
+      }
+      leaf rx-rate {
+        type string;
+      }
+      leaf tx-bw {
+        type string;
+      }
+      leaf rx-bw {
+        type string;
+      }
+      leaf tx-bytes {
+        type int32;
+      }
+      leaf rx-bytes {
+        type int32;
+      }
+      leaf tx-packets {
+        type int32;
+      }
+      leaf rx-packets {
+        type int32;
+      }
+    }
+    container wan-status {
+      leaf interface {
+        type string;
+      }
+      leaf protocol {
+        type string;
+      }
+      leaf ip-address {
+        type string;
+      }
+      leaf tx-bytes {
+        type string;
+      }
+      leaf rx-bytes {
+        type string;
+      }
+    }
+    container ethernet {
+      leaf link {
+        type string;
+      }
+      leaf speed {
+        type string;
+      }
+      leaf duplex {
+        type string;
+      }
+      leaf tx-bytes {
+        type string;
+      }
+      leaf rx-bytes {
+        type string;
+      }
+    }
+    container sfp {
+      leaf status {
+        type string;
+      }
+      leaf link {
+        type string;
+      }
+      leaf tx-fault {
+        type string;
+      }
+      leaf los {
+        type string;
+      }
+      leaf i2c-data {
+        type string;
+      }
+      leaf speed {
+        type string;
+      }
+      leaf volt {
+        type string;
+      }
+      leaf temperature {
+        type string;
+      }
+      leaf current {
+        type string;
+      }
+      leaf ptx {
+        type string;
+      }
+      leaf prx {
+        type string;
+      }
+    }
+    container information {
+      leaf system-time {
+        type string;
+      }
+      leaf uptime {
+        type string;
+      }
+      leaf software-version {
+        type string;
+      }
+      leaf secondary-software-version {
+        type string;
+      }
+      leaf boot-version {
+        type string;
+      }
+      leaf board-type {
+        type string;
+      }
+      leaf hw-platform {
+        type string;
+      }
+      leaf factory-wan-mac {
+        type string;
+      }
+      leaf factory-lan-mac {
+        type string;
+      }
+      leaf factory-serial-number {
+        type string;
+      }
+      leaf hw-revision {
+        type string;
+      }
+      leaf internet-connection-status {
+        type string;
+      }
+    }
+  }
+  container last-wlan-scan-results {
+    config false;
+    list cell {
+      key "name";
+      leaf name {
+        type string;
+      }
+      leaf bssid {
+        type string;
+      }
+      leaf ssid {
+        type string;
+      }
+      leaf channel {
+        type string;
+      }
+      leaf signal-level {
+        type int32;
+      }
+      leaf security {
+        type string;
+      }
+    }
+  }
+  rpc start-wlan-scan;
+  rpc reboot-device;
+  rpc save-config;
+  rpc upgrade-firmware {
+    input {
+      leaf url {
+        type string;
+        description
+          "URL to file for upgrade firmware";
+      }
+    }
+  }
+  notification upgrade-firmware-finished {
+    leaf status {
+      type uint32;
+    }
+  }
+  notification wlan-scan-finished {
+    leaf status {
+      type uint32;
+    }
+  }
+}

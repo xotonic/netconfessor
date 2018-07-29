@@ -1,0 +1,58 @@
+module robocop {
+  namespace "jnc:test:robocop";
+  prefix robocop;
+
+  container ammo {
+    config false;
+    leaf pistol-ammo {
+      type int32 {
+        range "0 .. 30";
+      }
+      description
+        "Pistol ammo count";
+    }
+    leaf rocket-ammo {
+      type int32 {
+        range "0 .. 8";
+      }
+      description
+        "Rocket launcher ammo count";
+    }
+  }
+  container prime-directives {
+    list directive {
+        key "code";
+        leaf code {
+            type string;
+        }
+        leaf enabled {
+            type boolean;
+        }
+    }
+  }
+  rpc arrest {
+    description
+      "Arrest an outlaw";
+    input {
+      leaf outlaw {
+        type string;
+        description
+          "Full name of the outlaw to arrest";
+      }
+    }
+    output {
+      leaf outlaw-status {
+        type boolean;
+        description
+          "Is the outlaw was arrested successfully";
+      }
+    }
+  }
+  notification offense-detected {
+    leaf offender {
+      type string;
+      description
+        "The full name of the offender";
+    }
+  }
+}

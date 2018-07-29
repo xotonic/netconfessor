@@ -1,0 +1,72 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = "io.netconfessor.gen"
+version = "0.1"
+
+
+repositories {
+
+    maven { url "http://lab3.eltex.loc:8888/repository/snapshots" }
+    maven { url "http://lab3.eltex.loc:8888/repository/internal/" }
+    maven { url "http://download.java.net/maven/2/" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile project(':core')
+}
+
+task yang {
+
+    def rootPackage = ["com", "netconfessor", "gen"]
+
+    project.convention.getPlugin(JavaPluginConvention.class).sourceSets.all { SourceSet sourceSet ->
+
+
+        String taskName = sourceSet.getTaskName('generate', 'Yang')
+
+        def sourceSetSrc = "${project.projectDir}/src/${sourceSet.getName()}"
+        def srcDir = sourceSetSrc + "/yang"
+        def genDir = sourceSetSrc + "/java/${rootPackage.join("/")}"
+        def genRes = sourceSetSrc + "/resources"
+
+
+        HashSet<String> yangs = [
+                "ap-config.yang", // wop-2ac-lr5
+                "ietf-inet-types.yang", // ap-config depends on it
+                "robocop.yang" // test device
+        ]
+
+        project.task(taskName) {
+
+            println "Executing task $name. Scan dir: ${srcDir}"
+
+            file(srcDir)
+                    .listFiles({ file -> file.isFile() && yangs.contains(file.name) } as FileFilter)
+                    .sort()
+                    .each { File file ->
+
+                println "Processing  $file.name"
+
+                project.pluginManager
+
+                exec {
+                    commandLine "/usr/local/bin/pyang",
+                            "--lax-quote-checks",
+                            "-p", srcDir,
+                            "--plugindir", "$projectDir/tools",
+                            "--format", "jnc",
+                            "--jnc-no-pkginfo",
+                            "--jnc-classpath-schema-loading", genRes,
+                            "--jnc-output", genDir,
+                            "--jnc-package", rootPackage.join("."),
+                            file.path
+                }
+            }
+        }
+        project.tasks.getByName(sourceSet.getCompileJavaTaskName()).dependsOn(taskName)
+    }
+}
+
+compileJava.dependsOn yang
+
