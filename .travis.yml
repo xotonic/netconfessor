@@ -1,0 +1,17 @@
+language: java
+dist: trusty
+
+addons:
+  apt:
+    packages:
+    - python-pip
+
+before_install:
+  - pip install pyang==1.7.3
+
+install:
+  - gradle check --info
+  - gradle jacocoTestReport
+
+after_success:
+  bash <(curl -s https://codecov.io/bash) -cF server
