@@ -1,11 +1,11 @@
 #!/usr/bin/python
 # -*- coding: latin-1 -*-
 """
-   Based on:
 
    JNC: Java NETCONF Client plug-in
 
    Copyright 2012 Tail-f Systems AB
+   Modified work Copyright 2018 Dmitriy Kuzmin
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.

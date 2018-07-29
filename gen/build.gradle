@@ -18,7 +18,7 @@ dependencies {
 
 task yang {
 
-    def rootPackage = ["com", "netconfessor", "gen"]
+    def rootPackage = ["io", "netconfessor", "gen"]
 
     project.convention.getPlugin(JavaPluginConvention.class).sourceSets.all { SourceSet sourceSet ->
 

@@ -1,7 +1,7 @@
 package io.netconfessor;
 
 
-import com.netconfessor.gen.robocop.RobocopSchema;
+import io.netconfessor.gen.robocop.RobocopSchema;
 import org.junit.Test;
 
 import java.util.Arrays;

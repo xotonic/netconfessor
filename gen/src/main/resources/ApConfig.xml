@@ -16,7 +16,7 @@
     </node>
     <node>
         <id>config</id>
-        <class>com.netconfessor.gen.apConfig.Config</class>
+        <class>io.netconfessor.gen.apConfig.Config</class>
         <tagpath>/config/</tagpath>
         <tagname>config</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -29,7 +29,7 @@
     </node>
     <node>
         <id>configDescription</id>
-        <class>com.netconfessor.gen.apConfig.config.ConfigDescription</class>
+        <class>io.netconfessor.gen.apConfig.config.ConfigDescription</class>
         <tagpath>/config/config-description/</tagpath>
         <tagname>config-description</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -42,7 +42,7 @@
     </node>
     <node>
         <id>version</id>
-        <class>com.netconfessor.gen.apConfig.config.configDescription.Version</class>
+        <class>io.netconfessor.gen.apConfig.config.configDescription.Version</class>
         <tagpath>/config/config-description/version/</tagpath>
         <tagname>version</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -56,7 +56,7 @@
     </node>
     <node>
         <id>interface_</id>
-        <class>com.netconfessor.gen.apConfig.config.JInterface</class>
+        <class>io.netconfessor.gen.apConfig.config.JInterface</class>
         <tagpath>/config/interface/</tagpath>
         <tagname>interface</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -70,7 +70,7 @@
     </node>
     <node>
         <id>name</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.Name</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.Name</class>
         <tagpath>/config/interface/name/</tagpath>
         <tagname>name</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -84,7 +84,7 @@
     </node>
     <node>
         <id>common</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.Common</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.Common</class>
         <tagpath>/config/interface/common/</tagpath>
         <tagname>common</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -97,7 +97,7 @@
     </node>
     <node>
         <id>type</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.Type</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.Type</class>
         <tagpath>/config/interface/common/type/</tagpath>
         <tagname>type</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -111,7 +111,7 @@
     </node>
     <node>
         <id>routeTable</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.RouteTable</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.RouteTable</class>
         <tagpath>/config/interface/common/route-table/</tagpath>
         <tagname>route-table</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -124,7 +124,7 @@
     </node>
     <node>
         <id>macAddr</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.MacAddr</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.MacAddr</class>
         <tagpath>/config/interface/common/mac-addr/</tagpath>
         <tagname>mac-addr</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -137,7 +137,7 @@
     </node>
     <node>
         <id>enabled</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.Enabled</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.Enabled</class>
         <tagpath>/config/interface/common/enabled/</tagpath>
         <tagname>enabled</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -151,7 +151,7 @@
     </node>
     <node>
         <id>wan</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.Wan</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.Wan</class>
         <tagpath>/config/interface/common/wan/</tagpath>
         <tagname>wan</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -165,7 +165,7 @@
     </node>
     <node>
         <id>masquerade</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.Masquerade</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.Masquerade</class>
         <tagpath>/config/interface/common/masquerade/</tagpath>
         <tagname>masquerade</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -179,7 +179,7 @@
     </node>
     <node>
         <id>protocol</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.Protocol</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.Protocol</class>
         <tagpath>/config/interface/common/protocol/</tagpath>
         <tagname>protocol</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -193,7 +193,7 @@
     </node>
     <node>
         <id>disableBroadcastDhcp</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.DisableBroadcastDhcp</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.DisableBroadcastDhcp</class>
         <tagpath>/config/interface/common/disable-broadcast-dhcp/</tagpath>
         <tagname>disable-broadcast-dhcp</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -207,7 +207,7 @@
     </node>
     <node>
         <id>staticIp</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.StaticIp</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.StaticIp</class>
         <tagpath>/config/interface/common/static-ip/</tagpath>
         <tagname>static-ip</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -221,7 +221,7 @@
     </node>
     <node>
         <id>netmask</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.Netmask</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.Netmask</class>
         <tagpath>/config/interface/common/netmask/</tagpath>
         <tagname>netmask</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -235,7 +235,7 @@
     </node>
     <node>
         <id>dnsServer1</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.DnsServer1</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.DnsServer1</class>
         <tagpath>/config/interface/common/dns-server-1/</tagpath>
         <tagname>dns-server-1</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -249,7 +249,7 @@
     </node>
     <node>
         <id>dnsServer2</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.DnsServer2</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.DnsServer2</class>
         <tagpath>/config/interface/common/dns-server-2/</tagpath>
         <tagname>dns-server-2</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -263,7 +263,7 @@
     </node>
     <node>
         <id>dhcpServer</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.DhcpServer</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.DhcpServer</class>
         <tagpath>/config/interface/common/dhcp-server/</tagpath>
         <tagname>dhcp-server</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -276,7 +276,7 @@
     </node>
     <node>
         <id>enable</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.Enable</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.Enable</class>
         <tagpath>/config/interface/common/dhcp-server/enable/</tagpath>
         <tagname>enable</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -290,7 +290,7 @@
     </node>
     <node>
         <id>startIp</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.StartIp</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.StartIp</class>
         <tagpath>/config/interface/common/dhcp-server/start-ip/</tagpath>
         <tagname>start-ip</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -303,7 +303,7 @@
     </node>
     <node>
         <id>endIp</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.EndIp</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.EndIp</class>
         <tagpath>/config/interface/common/dhcp-server/end-ip/</tagpath>
         <tagname>end-ip</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -316,7 +316,7 @@
     </node>
     <node>
         <id>netmask</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.Netmask</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.Netmask</class>
         <tagpath>/config/interface/common/dhcp-server/netmask/</tagpath>
         <tagname>netmask</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -329,7 +329,7 @@
     </node>
     <node>
         <id>dns</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.Dns</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.Dns</class>
         <tagpath>/config/interface/common/dhcp-server/dns/</tagpath>
         <tagname>dns</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -342,7 +342,7 @@
     </node>
     <node>
         <id>router</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.Router</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.Router</class>
         <tagpath>/config/interface/common/dhcp-server/router/</tagpath>
         <tagname>router</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -355,7 +355,7 @@
     </node>
     <node>
         <id>leaseTime</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.LeaseTime</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.LeaseTime</class>
         <tagpath>/config/interface/common/dhcp-server/lease-time/</tagpath>
         <tagname>lease-time</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -368,7 +368,7 @@
     </node>
     <node>
         <id>staticLease</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.StaticLease</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.StaticLease</class>
         <tagpath>/config/interface/common/dhcp-server/static-lease/</tagpath>
         <tagname>static-lease</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -382,7 +382,7 @@
     </node>
     <node>
         <id>name</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.staticLease.Name</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.staticLease.Name</class>
         <tagpath>/config/interface/common/dhcp-server/static-lease/name/</tagpath>
         <tagname>name</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -395,7 +395,7 @@
     </node>
     <node>
         <id>ipAddress</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.staticLease.IpAddress</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.dhcpServer.staticLease.IpAddress</class>
         <tagpath>/config/interface/common/dhcp-server/static-lease/ip-address/</tagpath>
         <tagname>ip-address</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -408,7 +408,7 @@
     </node>
     <node>
         <id>accessRules</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.AccessRules</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.AccessRules</class>
         <tagpath>/config/interface/common/access-rules/</tagpath>
         <tagname>access-rules</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -421,7 +421,7 @@
     </node>
     <node>
         <id>telnet</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.accessRules.Telnet</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.accessRules.Telnet</class>
         <tagpath>/config/interface/common/access-rules/telnet/</tagpath>
         <tagname>telnet</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -435,7 +435,7 @@
     </node>
     <node>
         <id>ssh</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.accessRules.Ssh</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.accessRules.Ssh</class>
         <tagpath>/config/interface/common/access-rules/ssh/</tagpath>
         <tagname>ssh</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -449,7 +449,7 @@
     </node>
     <node>
         <id>snmp</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.accessRules.Snmp</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.accessRules.Snmp</class>
         <tagpath>/config/interface/common/access-rules/snmp/</tagpath>
         <tagname>snmp</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -463,7 +463,7 @@
     </node>
     <node>
         <id>netconf</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.accessRules.Netconf</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.accessRules.Netconf</class>
         <tagpath>/config/interface/common/access-rules/netconf/</tagpath>
         <tagname>netconf</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -477,7 +477,7 @@
     </node>
     <node>
         <id>web</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.accessRules.Web</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.accessRules.Web</class>
         <tagpath>/config/interface/common/access-rules/web/</tagpath>
         <tagname>web</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -491,7 +491,7 @@
     </node>
     <node>
         <id>webHttps</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.common.accessRules.WebHttps</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.common.accessRules.WebHttps</class>
         <tagpath>/config/interface/common/access-rules/web-https/</tagpath>
         <tagname>web-https</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -505,7 +505,7 @@
     </node>
     <node>
         <id>eth</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.Eth</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.Eth</class>
         <tagpath>/config/interface/eth/</tagpath>
         <tagname>eth</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -518,7 +518,7 @@
     </node>
     <node>
         <id>bridge</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.Bridge</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.Bridge</class>
         <tagpath>/config/interface/bridge/</tagpath>
         <tagname>bridge</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -531,7 +531,7 @@
     </node>
     <node>
         <id>port</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.bridge.Port</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.bridge.Port</class>
         <tagpath>/config/interface/bridge/port/</tagpath>
         <tagname>port</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -545,7 +545,7 @@
     </node>
     <node>
         <id>name</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.bridge.port.Name</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.bridge.port.Name</class>
         <tagpath>/config/interface/bridge/port/name/</tagpath>
         <tagname>name</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -559,7 +559,7 @@
     </node>
     <node>
         <id>gre</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.Gre</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.Gre</class>
         <tagpath>/config/interface/gre/</tagpath>
         <tagname>gre</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -572,7 +572,7 @@
     </node>
     <node>
         <id>basic</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.gre.Basic</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.gre.Basic</class>
         <tagpath>/config/interface/gre/basic/</tagpath>
         <tagname>basic</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -586,7 +586,7 @@
     </node>
     <node>
         <id>remote</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.gre.Remote</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.gre.Remote</class>
         <tagpath>/config/interface/gre/remote/</tagpath>
         <tagname>remote</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -600,7 +600,7 @@
     </node>
     <node>
         <id>linkname</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.gre.Linkname</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.gre.Linkname</class>
         <tagpath>/config/interface/gre/linkname/</tagpath>
         <tagname>linkname</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -614,7 +614,7 @@
     </node>
     <node>
         <id>vlan</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.Vlan</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.Vlan</class>
         <tagpath>/config/interface/vlan/</tagpath>
         <tagname>vlan</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -627,7 +627,7 @@
     </node>
     <node>
         <id>basic</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vlan.Basic</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vlan.Basic</class>
         <tagpath>/config/interface/vlan/basic/</tagpath>
         <tagname>basic</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -641,7 +641,7 @@
     </node>
     <node>
         <id>vlanId</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vlan.VlanId</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vlan.VlanId</class>
         <tagpath>/config/interface/vlan/vlan-id/</tagpath>
         <tagname>vlan-id</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -655,7 +655,7 @@
     </node>
     <node>
         <id>vap</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.Vap</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.Vap</class>
         <tagpath>/config/interface/vap/</tagpath>
         <tagname>vap</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -668,7 +668,7 @@
     </node>
     <node>
         <id>basic</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.Basic</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.Basic</class>
         <tagpath>/config/interface/vap/basic/</tagpath>
         <tagname>basic</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -682,7 +682,7 @@
     </node>
     <node>
         <id>staLimit</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.StaLimit</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.StaLimit</class>
         <tagpath>/config/interface/vap/sta-limit/</tagpath>
         <tagname>sta-limit</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -696,7 +696,7 @@
     </node>
     <node>
         <id>vapId</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.VapId</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.VapId</class>
         <tagpath>/config/interface/vap/vap-id/</tagpath>
         <tagname>vap-id</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -710,7 +710,7 @@
     </node>
     <node>
         <id>acl</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.Acl</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.Acl</class>
         <tagpath>/config/interface/vap/acl/</tagpath>
         <tagname>acl</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -723,7 +723,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.acl.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.acl.Mode</class>
         <tagpath>/config/interface/vap/acl/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -737,7 +737,7 @@
     </node>
     <node>
         <id>mac</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.acl.Mac</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.acl.Mac</class>
         <tagpath>/config/interface/vap/acl/mac/</tagpath>
         <tagname>mac</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -751,7 +751,7 @@
     </node>
     <node>
         <id>name</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.acl.mac.Name</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.acl.mac.Name</class>
         <tagpath>/config/interface/vap/acl/mac/name/</tagpath>
         <tagname>name</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -765,7 +765,7 @@
     </node>
     <node>
         <id>inactivityTimeout</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.InactivityTimeout</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.InactivityTimeout</class>
         <tagpath>/config/interface/vap/inactivity-timeout/</tagpath>
         <tagname>inactivity-timeout</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -779,7 +779,7 @@
     </node>
     <node>
         <id>shaperPerVapTx</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.ShaperPerVapTx</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.ShaperPerVapTx</class>
         <tagpath>/config/interface/vap/shaper-per-vap-tx/</tagpath>
         <tagname>shaper-per-vap-tx</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -792,7 +792,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.shaperPerVapTx.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.shaperPerVapTx.Mode</class>
         <tagpath>/config/interface/vap/shaper-per-vap-tx/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -806,7 +806,7 @@
     </node>
     <node>
         <id>value_</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.shaperPerVapTx.JValue</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.shaperPerVapTx.JValue</class>
         <tagpath>/config/interface/vap/shaper-per-vap-tx/value/</tagpath>
         <tagname>value</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -820,7 +820,7 @@
     </node>
     <node>
         <id>shaperPerVapRx</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.ShaperPerVapRx</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.ShaperPerVapRx</class>
         <tagpath>/config/interface/vap/shaper-per-vap-rx/</tagpath>
         <tagname>shaper-per-vap-rx</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -833,7 +833,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.shaperPerVapRx.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.shaperPerVapRx.Mode</class>
         <tagpath>/config/interface/vap/shaper-per-vap-rx/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -847,7 +847,7 @@
     </node>
     <node>
         <id>value_</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.shaperPerVapRx.JValue</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.shaperPerVapRx.JValue</class>
         <tagpath>/config/interface/vap/shaper-per-vap-rx/value/</tagpath>
         <tagname>value</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -861,7 +861,7 @@
     </node>
     <node>
         <id>shaperPerStaTx</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.ShaperPerStaTx</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.ShaperPerStaTx</class>
         <tagpath>/config/interface/vap/shaper-per-sta-tx/</tagpath>
         <tagname>shaper-per-sta-tx</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -874,7 +874,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.shaperPerStaTx.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.shaperPerStaTx.Mode</class>
         <tagpath>/config/interface/vap/shaper-per-sta-tx/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -888,7 +888,7 @@
     </node>
     <node>
         <id>value_</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.shaperPerStaTx.JValue</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.shaperPerStaTx.JValue</class>
         <tagpath>/config/interface/vap/shaper-per-sta-tx/value/</tagpath>
         <tagname>value</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -902,7 +902,7 @@
     </node>
     <node>
         <id>shaperPerStaRx</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.ShaperPerStaRx</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.ShaperPerStaRx</class>
         <tagpath>/config/interface/vap/shaper-per-sta-rx/</tagpath>
         <tagname>shaper-per-sta-rx</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -915,7 +915,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.shaperPerStaRx.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.shaperPerStaRx.Mode</class>
         <tagpath>/config/interface/vap/shaper-per-sta-rx/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -929,7 +929,7 @@
     </node>
     <node>
         <id>value_</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.shaperPerStaRx.JValue</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.shaperPerStaRx.JValue</class>
         <tagpath>/config/interface/vap/shaper-per-sta-rx/value/</tagpath>
         <tagname>value</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -943,7 +943,7 @@
     </node>
     <node>
         <id>hidden</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.Hidden</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.Hidden</class>
         <tagpath>/config/interface/vap/hidden/</tagpath>
         <tagname>hidden</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -957,7 +957,7 @@
     </node>
     <node>
         <id>stationIsolation</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.StationIsolation</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.StationIsolation</class>
         <tagpath>/config/interface/vap/station-isolation/</tagpath>
         <tagname>station-isolation</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -971,7 +971,7 @@
     </node>
     <node>
         <id>vlanId</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.VlanId</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.VlanId</class>
         <tagpath>/config/interface/vap/vlan-id/</tagpath>
         <tagname>vlan-id</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -985,7 +985,7 @@
     </node>
     <node>
         <id>vlanPriority</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.VlanPriority</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.VlanPriority</class>
         <tagpath>/config/interface/vap/vlan-priority/</tagpath>
         <tagname>vlan-priority</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -999,7 +999,7 @@
     </node>
     <node>
         <id>vlanTrunk</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.VlanTrunk</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.VlanTrunk</class>
         <tagpath>/config/interface/vap/vlan-trunk/</tagpath>
         <tagname>vlan-trunk</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1013,7 +1013,7 @@
     </node>
     <node>
         <id>vlanSupport</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.VlanSupport</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.VlanSupport</class>
         <tagpath>/config/interface/vap/vlan-support/</tagpath>
         <tagname>vlan-support</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1027,7 +1027,7 @@
     </node>
     <node>
         <id>priorityByDscp</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.PriorityByDscp</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.PriorityByDscp</class>
         <tagpath>/config/interface/vap/priority-by-dscp/</tagpath>
         <tagname>priority-by-dscp</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1041,7 +1041,7 @@
     </node>
     <node>
         <id>securityMode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.SecurityMode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.SecurityMode</class>
         <tagpath>/config/interface/vap/security-mode/</tagpath>
         <tagname>security-mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1055,7 +1055,7 @@
     </node>
     <node>
         <id>keyWep</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.KeyWep</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.KeyWep</class>
         <tagpath>/config/interface/vap/key-wep/</tagpath>
         <tagname>key-wep</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1069,7 +1069,7 @@
     </node>
     <node>
         <id>keyWpa</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.KeyWpa</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.KeyWpa</class>
         <tagpath>/config/interface/vap/key-wpa/</tagpath>
         <tagname>key-wpa</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1083,7 +1083,7 @@
     </node>
     <node>
         <id>ssid</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.Ssid</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.Ssid</class>
         <tagpath>/config/interface/vap/ssid/</tagpath>
         <tagname>ssid</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1097,7 +1097,7 @@
     </node>
     <node>
         <id>radius</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.Radius</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.Radius</class>
         <tagpath>/config/interface/vap/radius/</tagpath>
         <tagname>radius</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1110,7 +1110,7 @@
     </node>
     <node>
         <id>authPort</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.radius.AuthPort</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.radius.AuthPort</class>
         <tagpath>/config/interface/vap/radius/auth-port/</tagpath>
         <tagname>auth-port</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1124,7 +1124,7 @@
     </node>
     <node>
         <id>authAddress</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.radius.AuthAddress</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.radius.AuthAddress</class>
         <tagpath>/config/interface/vap/radius/auth-address/</tagpath>
         <tagname>auth-address</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1138,7 +1138,7 @@
     </node>
     <node>
         <id>authPassword</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.radius.AuthPassword</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.radius.AuthPassword</class>
         <tagpath>/config/interface/vap/radius/auth-password/</tagpath>
         <tagname>auth-password</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1152,7 +1152,7 @@
     </node>
     <node>
         <id>acctEnable</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctEnable</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctEnable</class>
         <tagpath>/config/interface/vap/radius/acct-enable/</tagpath>
         <tagname>acct-enable</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1166,7 +1166,7 @@
     </node>
     <node>
         <id>acctPort</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctPort</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctPort</class>
         <tagpath>/config/interface/vap/radius/acct-port/</tagpath>
         <tagname>acct-port</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1180,7 +1180,7 @@
     </node>
     <node>
         <id>acctAddress</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctAddress</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctAddress</class>
         <tagpath>/config/interface/vap/radius/acct-address/</tagpath>
         <tagname>acct-address</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1194,7 +1194,7 @@
     </node>
     <node>
         <id>acctPassword</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctPassword</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctPassword</class>
         <tagpath>/config/interface/vap/radius/acct-password/</tagpath>
         <tagname>acct-password</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1208,7 +1208,7 @@
     </node>
     <node>
         <id>acctPeriodic</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctPeriodic</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctPeriodic</class>
         <tagpath>/config/interface/vap/radius/acct-periodic/</tagpath>
         <tagname>acct-periodic</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1222,7 +1222,7 @@
     </node>
     <node>
         <id>acctInterval</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctInterval</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.radius.AcctInterval</class>
         <tagpath>/config/interface/vap/radius/acct-interval/</tagpath>
         <tagname>acct-interval</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1236,7 +1236,7 @@
     </node>
     <node>
         <id>domain</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.vap.radius.Domain</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.vap.radius.Domain</class>
         <tagpath>/config/interface/vap/radius/domain/</tagpath>
         <tagname>domain</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1250,7 +1250,7 @@
     </node>
     <node>
         <id>wlan</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.Wlan</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.Wlan</class>
         <tagpath>/config/interface/wlan/</tagpath>
         <tagname>wlan</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1263,7 +1263,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.Mode</class>
         <tagpath>/config/interface/wlan/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1277,7 +1277,7 @@
     </node>
     <node>
         <id>rssiIndication</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.RssiIndication</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.RssiIndication</class>
         <tagpath>/config/interface/wlan/rssi-indication/</tagpath>
         <tagname>rssi-indication</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1291,7 +1291,7 @@
     </node>
     <node>
         <id>radio</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.Radio</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.Radio</class>
         <tagpath>/config/interface/wlan/radio/</tagpath>
         <tagname>radio</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1304,7 +1304,7 @@
     </node>
     <node>
         <id>country</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Country</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Country</class>
         <tagpath>/config/interface/wlan/radio/country/</tagpath>
         <tagname>country</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1318,7 +1318,7 @@
     </node>
     <node>
         <id>workMode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.WorkMode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.WorkMode</class>
         <tagpath>/config/interface/wlan/radio/work-mode/</tagpath>
         <tagname>work-mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1332,7 +1332,7 @@
     </node>
     <node>
         <id>bandwidth</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Bandwidth</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Bandwidth</class>
         <tagpath>/config/interface/wlan/radio/bandwidth/</tagpath>
         <tagname>bandwidth</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1346,7 +1346,7 @@
     </node>
     <node>
         <id>disableAtf</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.DisableAtf</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.DisableAtf</class>
         <tagpath>/config/interface/wlan/radio/disable-atf/</tagpath>
         <tagname>disable-atf</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1360,7 +1360,7 @@
     </node>
     <node>
         <id>tdma</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Tdma</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Tdma</class>
         <tagpath>/config/interface/wlan/radio/tdma/</tagpath>
         <tagname>tdma</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1374,7 +1374,7 @@
     </node>
     <node>
         <id>tdmaTxDuration</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.TdmaTxDuration</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.TdmaTxDuration</class>
         <tagpath>/config/interface/wlan/radio/tdma-tx-duration/</tagpath>
         <tagname>tdma-tx-duration</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1388,7 +1388,7 @@
     </node>
     <node>
         <id>atfIftime</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.AtfIftime</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.AtfIftime</class>
         <tagpath>/config/interface/wlan/radio/atf-iftime/</tagpath>
         <tagname>atf-iftime</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1402,7 +1402,7 @@
     </node>
     <node>
         <id>controlSideband</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.ControlSideband</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.ControlSideband</class>
         <tagpath>/config/interface/wlan/radio/control-sideband/</tagpath>
         <tagname>control-sideband</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1416,7 +1416,7 @@
     </node>
     <node>
         <id>txPower</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.TxPower</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.TxPower</class>
         <tagpath>/config/interface/wlan/radio/tx-power/</tagpath>
         <tagname>tx-power</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1430,7 +1430,7 @@
     </node>
     <node>
         <id>wmm</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Wmm</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Wmm</class>
         <tagpath>/config/interface/wlan/radio/wmm/</tagpath>
         <tagname>wmm</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1444,7 +1444,7 @@
     </node>
     <node>
         <id>vapEnable</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.VapEnable</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.VapEnable</class>
         <tagpath>/config/interface/wlan/radio/vap-enable/</tagpath>
         <tagname>vap-enable</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1458,7 +1458,7 @@
     </node>
     <node>
         <id>fragmentationThreshold</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.FragmentationThreshold</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.FragmentationThreshold</class>
         <tagpath>/config/interface/wlan/radio/fragmentation-threshold/</tagpath>
         <tagname>fragmentation-threshold</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1472,7 +1472,7 @@
     </node>
     <node>
         <id>rtsThreshold</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.RtsThreshold</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.RtsThreshold</class>
         <tagpath>/config/interface/wlan/radio/rts-threshold/</tagpath>
         <tagname>rts-threshold</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1486,7 +1486,7 @@
     </node>
     <node>
         <id>shortPreamble</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.ShortPreamble</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.ShortPreamble</class>
         <tagpath>/config/interface/wlan/radio/short-preamble/</tagpath>
         <tagname>short-preamble</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1500,7 +1500,7 @@
     </node>
     <node>
         <id>aggregation</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Aggregation</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Aggregation</class>
         <tagpath>/config/interface/wlan/radio/aggregation/</tagpath>
         <tagname>aggregation</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1514,7 +1514,7 @@
     </node>
     <node>
         <id>sgi</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Sgi</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Sgi</class>
         <tagpath>/config/interface/wlan/radio/sgi/</tagpath>
         <tagname>sgi</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1528,7 +1528,7 @@
     </node>
     <node>
         <id>stbc</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Stbc</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Stbc</class>
         <tagpath>/config/interface/wlan/radio/stbc/</tagpath>
         <tagname>stbc</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1542,7 +1542,7 @@
     </node>
     <node>
         <id>obssCoex</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.ObssCoex</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.ObssCoex</class>
         <tagpath>/config/interface/wlan/radio/obss-coex/</tagpath>
         <tagname>obss-coex</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1556,7 +1556,7 @@
     </node>
     <node>
         <id>beamforming</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Beamforming</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Beamforming</class>
         <tagpath>/config/interface/wlan/radio/beamforming/</tagpath>
         <tagname>beamforming</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1570,7 +1570,7 @@
     </node>
     <node>
         <id>ackTimeout</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.AckTimeout</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.AckTimeout</class>
         <tagpath>/config/interface/wlan/radio/ack-timeout/</tagpath>
         <tagname>ack-timeout</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1584,7 +1584,7 @@
     </node>
     <node>
         <id>protectionDisabled</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.ProtectionDisabled</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.ProtectionDisabled</class>
         <tagpath>/config/interface/wlan/radio/protection-disabled/</tagpath>
         <tagname>protection-disabled</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1598,7 +1598,7 @@
     </node>
     <node>
         <id>channel</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Channel</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Channel</class>
         <tagpath>/config/interface/wlan/radio/channel/</tagpath>
         <tagname>channel</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1612,7 +1612,7 @@
     </node>
     <node>
         <id>enableFixedRate</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.EnableFixedRate</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.EnableFixedRate</class>
         <tagpath>/config/interface/wlan/radio/enable-fixed-rate/</tagpath>
         <tagname>enable-fixed-rate</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1626,7 +1626,7 @@
     </node>
     <node>
         <id>fixedRate</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.FixedRate</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.FixedRate</class>
         <tagpath>/config/interface/wlan/radio/fixed-rate/</tagpath>
         <tagname>fixed-rate</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1640,7 +1640,7 @@
     </node>
     <node>
         <id>rates</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Rates</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Rates</class>
         <tagpath>/config/interface/wlan/radio/rates/</tagpath>
         <tagname>rates</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1653,7 +1653,7 @@
     </node>
     <node>
         <id>basic</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.Basic</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.Basic</class>
         <tagpath>/config/interface/wlan/radio/rates/basic/</tagpath>
         <tagname>basic</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1666,7 +1666,7 @@
     </node>
     <node>
         <id>rate6</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate6</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate6</class>
         <tagpath>/config/interface/wlan/radio/rates/basic/rate-6/</tagpath>
         <tagname>rate-6</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1680,7 +1680,7 @@
     </node>
     <node>
         <id>rate9</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate9</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate9</class>
         <tagpath>/config/interface/wlan/radio/rates/basic/rate-9/</tagpath>
         <tagname>rate-9</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1694,7 +1694,7 @@
     </node>
     <node>
         <id>rate12</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate12</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate12</class>
         <tagpath>/config/interface/wlan/radio/rates/basic/rate-12/</tagpath>
         <tagname>rate-12</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1708,7 +1708,7 @@
     </node>
     <node>
         <id>rate18</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate18</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate18</class>
         <tagpath>/config/interface/wlan/radio/rates/basic/rate-18/</tagpath>
         <tagname>rate-18</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1722,7 +1722,7 @@
     </node>
     <node>
         <id>rate24</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate24</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate24</class>
         <tagpath>/config/interface/wlan/radio/rates/basic/rate-24/</tagpath>
         <tagname>rate-24</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1736,7 +1736,7 @@
     </node>
     <node>
         <id>rate36</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate36</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate36</class>
         <tagpath>/config/interface/wlan/radio/rates/basic/rate-36/</tagpath>
         <tagname>rate-36</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1750,7 +1750,7 @@
     </node>
     <node>
         <id>rate48</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate48</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate48</class>
         <tagpath>/config/interface/wlan/radio/rates/basic/rate-48/</tagpath>
         <tagname>rate-48</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1764,7 +1764,7 @@
     </node>
     <node>
         <id>rate54</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate54</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.basic.Rate54</class>
         <tagpath>/config/interface/wlan/radio/rates/basic/rate-54/</tagpath>
         <tagname>rate-54</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1778,7 +1778,7 @@
     </node>
     <node>
         <id>supported</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.Supported</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.Supported</class>
         <tagpath>/config/interface/wlan/radio/rates/supported/</tagpath>
         <tagname>supported</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1791,7 +1791,7 @@
     </node>
     <node>
         <id>rate6</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate6</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate6</class>
         <tagpath>/config/interface/wlan/radio/rates/supported/rate-6/</tagpath>
         <tagname>rate-6</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1805,7 +1805,7 @@
     </node>
     <node>
         <id>rate9</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate9</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate9</class>
         <tagpath>/config/interface/wlan/radio/rates/supported/rate-9/</tagpath>
         <tagname>rate-9</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1819,7 +1819,7 @@
     </node>
     <node>
         <id>rate12</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate12</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate12</class>
         <tagpath>/config/interface/wlan/radio/rates/supported/rate-12/</tagpath>
         <tagname>rate-12</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1833,7 +1833,7 @@
     </node>
     <node>
         <id>rate18</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate18</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate18</class>
         <tagpath>/config/interface/wlan/radio/rates/supported/rate-18/</tagpath>
         <tagname>rate-18</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1847,7 +1847,7 @@
     </node>
     <node>
         <id>rate24</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate24</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate24</class>
         <tagpath>/config/interface/wlan/radio/rates/supported/rate-24/</tagpath>
         <tagname>rate-24</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1861,7 +1861,7 @@
     </node>
     <node>
         <id>rate36</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate36</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate36</class>
         <tagpath>/config/interface/wlan/radio/rates/supported/rate-36/</tagpath>
         <tagname>rate-36</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1875,7 +1875,7 @@
     </node>
     <node>
         <id>rate48</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate48</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate48</class>
         <tagpath>/config/interface/wlan/radio/rates/supported/rate-48/</tagpath>
         <tagname>rate-48</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1889,7 +1889,7 @@
     </node>
     <node>
         <id>rate54</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate54</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.rates.supported.Rate54</class>
         <tagpath>/config/interface/wlan/radio/rates/supported/rate-54/</tagpath>
         <tagname>rate-54</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1903,7 +1903,7 @@
     </node>
     <node>
         <id>txBroadcastLimit</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.TxBroadcastLimit</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.TxBroadcastLimit</class>
         <tagpath>/config/interface/wlan/radio/tx-broadcast-limit/</tagpath>
         <tagname>tx-broadcast-limit</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1917,7 +1917,7 @@
     </node>
     <node>
         <id>dfs</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Dfs</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Dfs</class>
         <tagpath>/config/interface/wlan/radio/dfs/</tagpath>
         <tagname>dfs</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1931,7 +1931,7 @@
     </node>
     <node>
         <id>fbwaMode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.FbwaMode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.FbwaMode</class>
         <tagpath>/config/interface/wlan/radio/fbwa-mode/</tagpath>
         <tagname>fbwa-mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1945,7 +1945,7 @@
     </node>
     <node>
         <id>beaconInterval</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.BeaconInterval</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.BeaconInterval</class>
         <tagpath>/config/interface/wlan/radio/beacon-interval/</tagpath>
         <tagname>beacon-interval</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1959,7 +1959,7 @@
     </node>
     <node>
         <id>qos</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.Qos</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.Qos</class>
         <tagpath>/config/interface/wlan/radio/qos/</tagpath>
         <tagname>qos</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1972,7 +1972,7 @@
     </node>
     <node>
         <id>enable</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.Enable</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.Enable</class>
         <tagpath>/config/interface/wlan/radio/qos/enable/</tagpath>
         <tagname>enable</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1986,7 +1986,7 @@
     </node>
     <node>
         <id>edcaAp</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.EdcaAp</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.EdcaAp</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/</tagpath>
         <tagname>edca-ap</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -1999,7 +1999,7 @@
     </node>
     <node>
         <id>bk</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.Bk</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.Bk</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/bk/</tagpath>
         <tagname>bk</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2012,7 +2012,7 @@
     </node>
     <node>
         <id>acm</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.bk.Acm</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.bk.Acm</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/bk/acm/</tagpath>
         <tagname>acm</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2026,7 +2026,7 @@
     </node>
     <node>
         <id>aifs</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.bk.Aifs</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.bk.Aifs</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/bk/aifs/</tagpath>
         <tagname>aifs</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2040,7 +2040,7 @@
     </node>
     <node>
         <id>cwmin</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.bk.Cwmin</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.bk.Cwmin</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/bk/cwmin/</tagpath>
         <tagname>cwmin</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2054,7 +2054,7 @@
     </node>
     <node>
         <id>cwmax</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.bk.Cwmax</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.bk.Cwmax</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/bk/cwmax/</tagpath>
         <tagname>cwmax</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2068,7 +2068,7 @@
     </node>
     <node>
         <id>txop</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.bk.Txop</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.bk.Txop</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/bk/txop/</tagpath>
         <tagname>txop</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2082,7 +2082,7 @@
     </node>
     <node>
         <id>be</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.Be</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.Be</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/be/</tagpath>
         <tagname>be</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2095,7 +2095,7 @@
     </node>
     <node>
         <id>acm</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.be.Acm</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.be.Acm</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/be/acm/</tagpath>
         <tagname>acm</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2109,7 +2109,7 @@
     </node>
     <node>
         <id>aifs</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.be.Aifs</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.be.Aifs</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/be/aifs/</tagpath>
         <tagname>aifs</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2123,7 +2123,7 @@
     </node>
     <node>
         <id>cwmin</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.be.Cwmin</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.be.Cwmin</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/be/cwmin/</tagpath>
         <tagname>cwmin</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2137,7 +2137,7 @@
     </node>
     <node>
         <id>cwmax</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.be.Cwmax</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.be.Cwmax</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/be/cwmax/</tagpath>
         <tagname>cwmax</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2151,7 +2151,7 @@
     </node>
     <node>
         <id>txop</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.be.Txop</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.be.Txop</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/be/txop/</tagpath>
         <tagname>txop</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2165,7 +2165,7 @@
     </node>
     <node>
         <id>vi</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.Vi</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.Vi</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vi/</tagpath>
         <tagname>vi</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2178,7 +2178,7 @@
     </node>
     <node>
         <id>acm</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vi.Acm</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vi.Acm</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vi/acm/</tagpath>
         <tagname>acm</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2192,7 +2192,7 @@
     </node>
     <node>
         <id>aifs</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vi.Aifs</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vi.Aifs</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vi/aifs/</tagpath>
         <tagname>aifs</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2206,7 +2206,7 @@
     </node>
     <node>
         <id>cwmin</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vi.Cwmin</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vi.Cwmin</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vi/cwmin/</tagpath>
         <tagname>cwmin</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2220,7 +2220,7 @@
     </node>
     <node>
         <id>cwmax</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vi.Cwmax</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vi.Cwmax</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vi/cwmax/</tagpath>
         <tagname>cwmax</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2234,7 +2234,7 @@
     </node>
     <node>
         <id>txop</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vi.Txop</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vi.Txop</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vi/txop/</tagpath>
         <tagname>txop</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2248,7 +2248,7 @@
     </node>
     <node>
         <id>vo</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.Vo</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.Vo</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vo/</tagpath>
         <tagname>vo</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2261,7 +2261,7 @@
     </node>
     <node>
         <id>acm</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vo.Acm</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vo.Acm</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vo/acm/</tagpath>
         <tagname>acm</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2275,7 +2275,7 @@
     </node>
     <node>
         <id>aifs</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vo.Aifs</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vo.Aifs</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vo/aifs/</tagpath>
         <tagname>aifs</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2289,7 +2289,7 @@
     </node>
     <node>
         <id>cwmin</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vo.Cwmin</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vo.Cwmin</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vo/cwmin/</tagpath>
         <tagname>cwmin</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2303,7 +2303,7 @@
     </node>
     <node>
         <id>cwmax</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vo.Cwmax</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vo.Cwmax</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vo/cwmax/</tagpath>
         <tagname>cwmax</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2317,7 +2317,7 @@
     </node>
     <node>
         <id>txop</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vo.Txop</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaAp.vo.Txop</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-ap/vo/txop/</tagpath>
         <tagname>txop</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2331,7 +2331,7 @@
     </node>
     <node>
         <id>edcaSta</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.EdcaSta</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.EdcaSta</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/</tagpath>
         <tagname>edca-sta</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2344,7 +2344,7 @@
     </node>
     <node>
         <id>bk</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.Bk</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.Bk</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/bk/</tagpath>
         <tagname>bk</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2357,7 +2357,7 @@
     </node>
     <node>
         <id>acm</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.bk.Acm</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.bk.Acm</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/bk/acm/</tagpath>
         <tagname>acm</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2371,7 +2371,7 @@
     </node>
     <node>
         <id>aifs</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.bk.Aifs</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.bk.Aifs</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/bk/aifs/</tagpath>
         <tagname>aifs</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2385,7 +2385,7 @@
     </node>
     <node>
         <id>cwmin</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.bk.Cwmin</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.bk.Cwmin</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/bk/cwmin/</tagpath>
         <tagname>cwmin</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2399,7 +2399,7 @@
     </node>
     <node>
         <id>cwmax</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.bk.Cwmax</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.bk.Cwmax</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/bk/cwmax/</tagpath>
         <tagname>cwmax</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2413,7 +2413,7 @@
     </node>
     <node>
         <id>txop</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.bk.Txop</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.bk.Txop</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/bk/txop/</tagpath>
         <tagname>txop</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2427,7 +2427,7 @@
     </node>
     <node>
         <id>be</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.Be</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.Be</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/be/</tagpath>
         <tagname>be</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2440,7 +2440,7 @@
     </node>
     <node>
         <id>acm</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.be.Acm</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.be.Acm</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/be/acm/</tagpath>
         <tagname>acm</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2454,7 +2454,7 @@
     </node>
     <node>
         <id>aifs</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.be.Aifs</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.be.Aifs</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/be/aifs/</tagpath>
         <tagname>aifs</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2468,7 +2468,7 @@
     </node>
     <node>
         <id>cwmin</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.be.Cwmin</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.be.Cwmin</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/be/cwmin/</tagpath>
         <tagname>cwmin</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2482,7 +2482,7 @@
     </node>
     <node>
         <id>cwmax</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.be.Cwmax</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.be.Cwmax</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/be/cwmax/</tagpath>
         <tagname>cwmax</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2496,7 +2496,7 @@
     </node>
     <node>
         <id>txop</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.be.Txop</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.be.Txop</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/be/txop/</tagpath>
         <tagname>txop</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2510,7 +2510,7 @@
     </node>
     <node>
         <id>vi</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.Vi</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.Vi</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vi/</tagpath>
         <tagname>vi</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2523,7 +2523,7 @@
     </node>
     <node>
         <id>acm</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vi.Acm</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vi.Acm</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vi/acm/</tagpath>
         <tagname>acm</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2537,7 +2537,7 @@
     </node>
     <node>
         <id>aifs</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vi.Aifs</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vi.Aifs</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vi/aifs/</tagpath>
         <tagname>aifs</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2551,7 +2551,7 @@
     </node>
     <node>
         <id>cwmin</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vi.Cwmin</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vi.Cwmin</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vi/cwmin/</tagpath>
         <tagname>cwmin</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2565,7 +2565,7 @@
     </node>
     <node>
         <id>cwmax</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vi.Cwmax</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vi.Cwmax</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vi/cwmax/</tagpath>
         <tagname>cwmax</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2579,7 +2579,7 @@
     </node>
     <node>
         <id>txop</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vi.Txop</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vi.Txop</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vi/txop/</tagpath>
         <tagname>txop</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2593,7 +2593,7 @@
     </node>
     <node>
         <id>vo</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.Vo</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.Vo</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vo/</tagpath>
         <tagname>vo</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2606,7 +2606,7 @@
     </node>
     <node>
         <id>acm</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vo.Acm</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vo.Acm</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vo/acm/</tagpath>
         <tagname>acm</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2620,7 +2620,7 @@
     </node>
     <node>
         <id>aifs</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vo.Aifs</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vo.Aifs</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vo/aifs/</tagpath>
         <tagname>aifs</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2634,7 +2634,7 @@
     </node>
     <node>
         <id>cwmin</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vo.Cwmin</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vo.Cwmin</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vo/cwmin/</tagpath>
         <tagname>cwmin</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2648,7 +2648,7 @@
     </node>
     <node>
         <id>cwmax</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vo.Cwmax</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vo.Cwmax</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vo/cwmax/</tagpath>
         <tagname>cwmax</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2662,7 +2662,7 @@
     </node>
     <node>
         <id>txop</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vo.Txop</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.radio.qos.edcaSta.vo.Txop</class>
         <tagpath>/config/interface/wlan/radio/qos/edca-sta/vo/txop/</tagpath>
         <tagname>txop</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2676,7 +2676,7 @@
     </node>
     <node>
         <id>sta</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.Sta</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.Sta</class>
         <tagpath>/config/interface/wlan/sta/</tagpath>
         <tagname>sta</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2689,7 +2689,7 @@
     </node>
     <node>
         <id>securityMode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.sta.SecurityMode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.sta.SecurityMode</class>
         <tagpath>/config/interface/wlan/sta/security-mode/</tagpath>
         <tagname>security-mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2703,7 +2703,7 @@
     </node>
     <node>
         <id>clientShaperMode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.sta.ClientShaperMode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.sta.ClientShaperMode</class>
         <tagpath>/config/interface/wlan/sta/client-shaper-mode/</tagpath>
         <tagname>client-shaper-mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2717,7 +2717,7 @@
     </node>
     <node>
         <id>shaperLimit</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.sta.ShaperLimit</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.sta.ShaperLimit</class>
         <tagpath>/config/interface/wlan/sta/shaper-limit/</tagpath>
         <tagname>shaper-limit</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2731,7 +2731,7 @@
     </node>
     <node>
         <id>keyWep</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.sta.KeyWep</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.sta.KeyWep</class>
         <tagpath>/config/interface/wlan/sta/key-wep/</tagpath>
         <tagname>key-wep</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2745,7 +2745,7 @@
     </node>
     <node>
         <id>keyWpa</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.sta.KeyWpa</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.sta.KeyWpa</class>
         <tagpath>/config/interface/wlan/sta/key-wpa/</tagpath>
         <tagname>key-wpa</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2759,7 +2759,7 @@
     </node>
     <node>
         <id>ssid</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.sta.Ssid</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.sta.Ssid</class>
         <tagpath>/config/interface/wlan/sta/ssid/</tagpath>
         <tagname>ssid</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2773,7 +2773,7 @@
     </node>
     <node>
         <id>vlanSupport</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.sta.VlanSupport</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.sta.VlanSupport</class>
         <tagpath>/config/interface/wlan/sta/vlan-support/</tagpath>
         <tagname>vlan-support</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2787,7 +2787,7 @@
     </node>
     <node>
         <id>radius</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.sta.Radius</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.sta.Radius</class>
         <tagpath>/config/interface/wlan/sta/radius/</tagpath>
         <tagname>radius</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2800,7 +2800,7 @@
     </node>
     <node>
         <id>username</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.sta.radius.Username</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.sta.radius.Username</class>
         <tagpath>/config/interface/wlan/sta/radius/username/</tagpath>
         <tagname>username</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2814,7 +2814,7 @@
     </node>
     <node>
         <id>password</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.sta.radius.Password</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.sta.radius.Password</class>
         <tagpath>/config/interface/wlan/sta/radius/password/</tagpath>
         <tagname>password</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2828,7 +2828,7 @@
     </node>
     <node>
         <id>ap</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.Ap</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.Ap</class>
         <tagpath>/config/interface/wlan/ap/</tagpath>
         <tagname>ap</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2841,7 +2841,7 @@
     </node>
     <node>
         <id>acl</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.Acl</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.Acl</class>
         <tagpath>/config/interface/wlan/ap/acl/</tagpath>
         <tagname>acl</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2854,7 +2854,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.acl.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.acl.Mode</class>
         <tagpath>/config/interface/wlan/ap/acl/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2868,7 +2868,7 @@
     </node>
     <node>
         <id>mac</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.acl.Mac</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.acl.Mac</class>
         <tagpath>/config/interface/wlan/ap/acl/mac/</tagpath>
         <tagname>mac</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2882,7 +2882,7 @@
     </node>
     <node>
         <id>name</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.acl.mac.Name</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.acl.mac.Name</class>
         <tagpath>/config/interface/wlan/ap/acl/mac/name/</tagpath>
         <tagname>name</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2896,7 +2896,7 @@
     </node>
     <node>
         <id>stationIsolation</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.StationIsolation</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.StationIsolation</class>
         <tagpath>/config/interface/wlan/ap/station-isolation/</tagpath>
         <tagname>station-isolation</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2910,7 +2910,7 @@
     </node>
     <node>
         <id>inactivityTimeout</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.InactivityTimeout</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.InactivityTimeout</class>
         <tagpath>/config/interface/wlan/ap/inactivity-timeout/</tagpath>
         <tagname>inactivity-timeout</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2924,7 +2924,7 @@
     </node>
     <node>
         <id>shaperPerVapTx</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.ShaperPerVapTx</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.ShaperPerVapTx</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-vap-tx/</tagpath>
         <tagname>shaper-per-vap-tx</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2937,7 +2937,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerVapTx.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerVapTx.Mode</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-vap-tx/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2951,7 +2951,7 @@
     </node>
     <node>
         <id>value_</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerVapTx.JValue</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerVapTx.JValue</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-vap-tx/value/</tagpath>
         <tagname>value</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2965,7 +2965,7 @@
     </node>
     <node>
         <id>shaperPerVapRx</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.ShaperPerVapRx</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.ShaperPerVapRx</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-vap-rx/</tagpath>
         <tagname>shaper-per-vap-rx</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2978,7 +2978,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerVapRx.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerVapRx.Mode</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-vap-rx/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -2992,7 +2992,7 @@
     </node>
     <node>
         <id>value_</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerVapRx.JValue</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerVapRx.JValue</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-vap-rx/value/</tagpath>
         <tagname>value</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3006,7 +3006,7 @@
     </node>
     <node>
         <id>shaperPerStaTx</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.ShaperPerStaTx</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.ShaperPerStaTx</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-sta-tx/</tagpath>
         <tagname>shaper-per-sta-tx</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3019,7 +3019,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerStaTx.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerStaTx.Mode</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-sta-tx/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3033,7 +3033,7 @@
     </node>
     <node>
         <id>value_</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerStaTx.JValue</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerStaTx.JValue</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-sta-tx/value/</tagpath>
         <tagname>value</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3047,7 +3047,7 @@
     </node>
     <node>
         <id>shaperPerStaRx</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.ShaperPerStaRx</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.ShaperPerStaRx</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-sta-rx/</tagpath>
         <tagname>shaper-per-sta-rx</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3060,7 +3060,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerStaRx.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerStaRx.Mode</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-sta-rx/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3074,7 +3074,7 @@
     </node>
     <node>
         <id>value_</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerStaRx.JValue</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.shaperPerStaRx.JValue</class>
         <tagpath>/config/interface/wlan/ap/shaper-per-sta-rx/value/</tagpath>
         <tagname>value</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3088,7 +3088,7 @@
     </node>
     <node>
         <id>vlanId</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.VlanId</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.VlanId</class>
         <tagpath>/config/interface/wlan/ap/vlan-id/</tagpath>
         <tagname>vlan-id</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3102,7 +3102,7 @@
     </node>
     <node>
         <id>vlanPriority</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.VlanPriority</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.VlanPriority</class>
         <tagpath>/config/interface/wlan/ap/vlan-priority/</tagpath>
         <tagname>vlan-priority</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3116,7 +3116,7 @@
     </node>
     <node>
         <id>vlanTrunk</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.VlanTrunk</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.VlanTrunk</class>
         <tagpath>/config/interface/wlan/ap/vlan-trunk/</tagpath>
         <tagname>vlan-trunk</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3130,7 +3130,7 @@
     </node>
     <node>
         <id>vlanSupport</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.VlanSupport</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.VlanSupport</class>
         <tagpath>/config/interface/wlan/ap/vlan-support/</tagpath>
         <tagname>vlan-support</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3144,7 +3144,7 @@
     </node>
     <node>
         <id>priorityByDscp</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.PriorityByDscp</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.PriorityByDscp</class>
         <tagpath>/config/interface/wlan/ap/priority-by-dscp/</tagpath>
         <tagname>priority-by-dscp</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3158,7 +3158,7 @@
     </node>
     <node>
         <id>securityMode</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.SecurityMode</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.SecurityMode</class>
         <tagpath>/config/interface/wlan/ap/security-mode/</tagpath>
         <tagname>security-mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3172,7 +3172,7 @@
     </node>
     <node>
         <id>hidden</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.Hidden</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.Hidden</class>
         <tagpath>/config/interface/wlan/ap/hidden/</tagpath>
         <tagname>hidden</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3186,7 +3186,7 @@
     </node>
     <node>
         <id>staLimit</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.StaLimit</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.StaLimit</class>
         <tagpath>/config/interface/wlan/ap/sta-limit/</tagpath>
         <tagname>sta-limit</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3200,7 +3200,7 @@
     </node>
     <node>
         <id>iapp</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.Iapp</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.Iapp</class>
         <tagpath>/config/interface/wlan/ap/iapp/</tagpath>
         <tagname>iapp</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3214,7 +3214,7 @@
     </node>
     <node>
         <id>keyWep</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.KeyWep</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.KeyWep</class>
         <tagpath>/config/interface/wlan/ap/key-wep/</tagpath>
         <tagname>key-wep</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3228,7 +3228,7 @@
     </node>
     <node>
         <id>keyWpa</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.KeyWpa</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.KeyWpa</class>
         <tagpath>/config/interface/wlan/ap/key-wpa/</tagpath>
         <tagname>key-wpa</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3242,7 +3242,7 @@
     </node>
     <node>
         <id>ssid</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.Ssid</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.Ssid</class>
         <tagpath>/config/interface/wlan/ap/ssid/</tagpath>
         <tagname>ssid</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3256,7 +3256,7 @@
     </node>
     <node>
         <id>radius</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.Radius</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.Radius</class>
         <tagpath>/config/interface/wlan/ap/radius/</tagpath>
         <tagname>radius</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3269,7 +3269,7 @@
     </node>
     <node>
         <id>authPort</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AuthPort</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AuthPort</class>
         <tagpath>/config/interface/wlan/ap/radius/auth-port/</tagpath>
         <tagname>auth-port</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3283,7 +3283,7 @@
     </node>
     <node>
         <id>authAddress</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AuthAddress</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AuthAddress</class>
         <tagpath>/config/interface/wlan/ap/radius/auth-address/</tagpath>
         <tagname>auth-address</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3297,7 +3297,7 @@
     </node>
     <node>
         <id>domain</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.Domain</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.Domain</class>
         <tagpath>/config/interface/wlan/ap/radius/domain/</tagpath>
         <tagname>domain</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3311,7 +3311,7 @@
     </node>
     <node>
         <id>authPassword</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AuthPassword</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AuthPassword</class>
         <tagpath>/config/interface/wlan/ap/radius/auth-password/</tagpath>
         <tagname>auth-password</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3325,7 +3325,7 @@
     </node>
     <node>
         <id>acctEnable</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctEnable</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctEnable</class>
         <tagpath>/config/interface/wlan/ap/radius/acct-enable/</tagpath>
         <tagname>acct-enable</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3339,7 +3339,7 @@
     </node>
     <node>
         <id>acctPort</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctPort</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctPort</class>
         <tagpath>/config/interface/wlan/ap/radius/acct-port/</tagpath>
         <tagname>acct-port</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3353,7 +3353,7 @@
     </node>
     <node>
         <id>acctPeriodic</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctPeriodic</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctPeriodic</class>
         <tagpath>/config/interface/wlan/ap/radius/acct-periodic/</tagpath>
         <tagname>acct-periodic</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3367,7 +3367,7 @@
     </node>
     <node>
         <id>acctInterval</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctInterval</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctInterval</class>
         <tagpath>/config/interface/wlan/ap/radius/acct-interval/</tagpath>
         <tagname>acct-interval</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3381,7 +3381,7 @@
     </node>
     <node>
         <id>acctAddress</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctAddress</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctAddress</class>
         <tagpath>/config/interface/wlan/ap/radius/acct-address/</tagpath>
         <tagname>acct-address</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3395,7 +3395,7 @@
     </node>
     <node>
         <id>acctPassword</id>
-        <class>com.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctPassword</class>
+        <class>io.netconfessor.gen.apConfig.config.interface_.wlan.ap.radius.AcctPassword</class>
         <tagpath>/config/interface/wlan/ap/radius/acct-password/</tagpath>
         <tagname>acct-password</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3409,7 +3409,7 @@
     </node>
     <node>
         <id>webConfigurator</id>
-        <class>com.netconfessor.gen.apConfig.config.WebConfigurator</class>
+        <class>io.netconfessor.gen.apConfig.config.WebConfigurator</class>
         <tagpath>/config/web-configurator/</tagpath>
         <tagname>web-configurator</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3422,7 +3422,7 @@
     </node>
     <node>
         <id>enable</id>
-        <class>com.netconfessor.gen.apConfig.config.webConfigurator.Enable</class>
+        <class>io.netconfessor.gen.apConfig.config.webConfigurator.Enable</class>
         <tagpath>/config/web-configurator/enable/</tagpath>
         <tagname>enable</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3436,7 +3436,7 @@
     </node>
     <node>
         <id>httpPort</id>
-        <class>com.netconfessor.gen.apConfig.config.webConfigurator.HttpPort</class>
+        <class>io.netconfessor.gen.apConfig.config.webConfigurator.HttpPort</class>
         <tagpath>/config/web-configurator/http-port/</tagpath>
         <tagname>http-port</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3450,7 +3450,7 @@
     </node>
     <node>
         <id>httpsPort</id>
-        <class>com.netconfessor.gen.apConfig.config.webConfigurator.HttpsPort</class>
+        <class>io.netconfessor.gen.apConfig.config.webConfigurator.HttpsPort</class>
         <tagpath>/config/web-configurator/https-port/</tagpath>
         <tagname>https-port</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3464,7 +3464,7 @@
     </node>
     <node>
         <id>authentication</id>
-        <class>com.netconfessor.gen.apConfig.config.Authentication</class>
+        <class>io.netconfessor.gen.apConfig.config.Authentication</class>
         <tagpath>/config/authentication/</tagpath>
         <tagname>authentication</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3477,7 +3477,7 @@
     </node>
     <node>
         <id>adminPassword</id>
-        <class>com.netconfessor.gen.apConfig.config.authentication.AdminPassword</class>
+        <class>io.netconfessor.gen.apConfig.config.authentication.AdminPassword</class>
         <tagpath>/config/authentication/admin-password/</tagpath>
         <tagname>admin-password</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3491,7 +3491,7 @@
     </node>
     <node>
         <id>snmp</id>
-        <class>com.netconfessor.gen.apConfig.config.Snmp</class>
+        <class>io.netconfessor.gen.apConfig.config.Snmp</class>
         <tagpath>/config/snmp/</tagpath>
         <tagname>snmp</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3504,7 +3504,7 @@
     </node>
     <node>
         <id>enable</id>
-        <class>com.netconfessor.gen.apConfig.config.snmp.Enable</class>
+        <class>io.netconfessor.gen.apConfig.config.snmp.Enable</class>
         <tagpath>/config/snmp/enable/</tagpath>
         <tagname>enable</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3518,7 +3518,7 @@
     </node>
     <node>
         <id>rocommunity</id>
-        <class>com.netconfessor.gen.apConfig.config.snmp.Rocommunity</class>
+        <class>io.netconfessor.gen.apConfig.config.snmp.Rocommunity</class>
         <tagpath>/config/snmp/rocommunity/</tagpath>
         <tagname>rocommunity</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3532,7 +3532,7 @@
     </node>
     <node>
         <id>rwcommunity</id>
-        <class>com.netconfessor.gen.apConfig.config.snmp.Rwcommunity</class>
+        <class>io.netconfessor.gen.apConfig.config.snmp.Rwcommunity</class>
         <tagpath>/config/snmp/rwcommunity/</tagpath>
         <tagname>rwcommunity</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3546,7 +3546,7 @@
     </node>
     <node>
         <id>trapsink</id>
-        <class>com.netconfessor.gen.apConfig.config.snmp.Trapsink</class>
+        <class>io.netconfessor.gen.apConfig.config.snmp.Trapsink</class>
         <tagpath>/config/snmp/trapsink/</tagpath>
         <tagname>trapsink</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3560,7 +3560,7 @@
     </node>
     <node>
         <id>trap2sink</id>
-        <class>com.netconfessor.gen.apConfig.config.snmp.Trap2sink</class>
+        <class>io.netconfessor.gen.apConfig.config.snmp.Trap2sink</class>
         <tagpath>/config/snmp/trap2sink/</tagpath>
         <tagname>trap2sink</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3574,7 +3574,7 @@
     </node>
     <node>
         <id>informsink</id>
-        <class>com.netconfessor.gen.apConfig.config.snmp.Informsink</class>
+        <class>io.netconfessor.gen.apConfig.config.snmp.Informsink</class>
         <tagpath>/config/snmp/informsink/</tagpath>
         <tagname>informsink</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3588,7 +3588,7 @@
     </node>
     <node>
         <id>sysname</id>
-        <class>com.netconfessor.gen.apConfig.config.snmp.Sysname</class>
+        <class>io.netconfessor.gen.apConfig.config.snmp.Sysname</class>
         <tagpath>/config/snmp/sysname/</tagpath>
         <tagname>sysname</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3602,7 +3602,7 @@
     </node>
     <node>
         <id>syscontact</id>
-        <class>com.netconfessor.gen.apConfig.config.snmp.Syscontact</class>
+        <class>io.netconfessor.gen.apConfig.config.snmp.Syscontact</class>
         <tagpath>/config/snmp/syscontact/</tagpath>
         <tagname>syscontact</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3616,7 +3616,7 @@
     </node>
     <node>
         <id>syslocation</id>
-        <class>com.netconfessor.gen.apConfig.config.snmp.Syslocation</class>
+        <class>io.netconfessor.gen.apConfig.config.snmp.Syslocation</class>
         <tagpath>/config/snmp/syslocation/</tagpath>
         <tagname>syslocation</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3630,7 +3630,7 @@
     </node>
     <node>
         <id>trapcommunity</id>
-        <class>com.netconfessor.gen.apConfig.config.snmp.Trapcommunity</class>
+        <class>io.netconfessor.gen.apConfig.config.snmp.Trapcommunity</class>
         <tagpath>/config/snmp/trapcommunity/</tagpath>
         <tagname>trapcommunity</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3644,7 +3644,7 @@
     </node>
     <node>
         <id>netconf</id>
-        <class>com.netconfessor.gen.apConfig.config.Netconf</class>
+        <class>io.netconfessor.gen.apConfig.config.Netconf</class>
         <tagpath>/config/netconf/</tagpath>
         <tagname>netconf</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3657,7 +3657,7 @@
     </node>
     <node>
         <id>enable</id>
-        <class>com.netconfessor.gen.apConfig.config.netconf.Enable</class>
+        <class>io.netconfessor.gen.apConfig.config.netconf.Enable</class>
         <tagpath>/config/netconf/enable/</tagpath>
         <tagname>enable</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3671,7 +3671,7 @@
     </node>
     <node>
         <id>dateTime</id>
-        <class>com.netconfessor.gen.apConfig.config.DateTime</class>
+        <class>io.netconfessor.gen.apConfig.config.DateTime</class>
         <tagpath>/config/date-time/</tagpath>
         <tagname>date-time</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3684,7 +3684,7 @@
     </node>
     <node>
         <id>mode</id>
-        <class>com.netconfessor.gen.apConfig.config.dateTime.Mode</class>
+        <class>io.netconfessor.gen.apConfig.config.dateTime.Mode</class>
         <tagpath>/config/date-time/mode/</tagpath>
         <tagname>mode</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3698,7 +3698,7 @@
     </node>
     <node>
         <id>common</id>
-        <class>com.netconfessor.gen.apConfig.config.dateTime.Common</class>
+        <class>io.netconfessor.gen.apConfig.config.dateTime.Common</class>
         <tagpath>/config/date-time/common/</tagpath>
         <tagname>common</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3711,7 +3711,7 @@
     </node>
     <node>
         <id>timezone</id>
-        <class>com.netconfessor.gen.apConfig.config.dateTime.common.Timezone</class>
+        <class>io.netconfessor.gen.apConfig.config.dateTime.common.Timezone</class>
         <tagpath>/config/date-time/common/timezone/</tagpath>
         <tagname>timezone</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3725,7 +3725,7 @@
     </node>
     <node>
         <id>dstenable</id>
-        <class>com.netconfessor.gen.apConfig.config.dateTime.common.Dstenable</class>
+        <class>io.netconfessor.gen.apConfig.config.dateTime.common.Dstenable</class>
         <tagpath>/config/date-time/common/dstenable/</tagpath>
         <tagname>dstenable</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3739,7 +3739,7 @@
     </node>
     <node>
         <id>dststart</id>
-        <class>com.netconfessor.gen.apConfig.config.dateTime.common.Dststart</class>
+        <class>io.netconfessor.gen.apConfig.config.dateTime.common.Dststart</class>
         <tagpath>/config/date-time/common/dststart/</tagpath>
         <tagname>dststart</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3753,7 +3753,7 @@
     </node>
     <node>
         <id>dstend</id>
-        <class>com.netconfessor.gen.apConfig.config.dateTime.common.Dstend</class>
+        <class>io.netconfessor.gen.apConfig.config.dateTime.common.Dstend</class>
         <tagpath>/config/date-time/common/dstend/</tagpath>
         <tagname>dstend</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3767,7 +3767,7 @@
     </node>
     <node>
         <id>dstoffset</id>
-        <class>com.netconfessor.gen.apConfig.config.dateTime.common.Dstoffset</class>
+        <class>io.netconfessor.gen.apConfig.config.dateTime.common.Dstoffset</class>
         <tagpath>/config/date-time/common/dstoffset/</tagpath>
         <tagname>dstoffset</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3781,7 +3781,7 @@
     </node>
     <node>
         <id>manual</id>
-        <class>com.netconfessor.gen.apConfig.config.dateTime.Manual</class>
+        <class>io.netconfessor.gen.apConfig.config.dateTime.Manual</class>
         <tagpath>/config/date-time/manual/</tagpath>
         <tagname>manual</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3794,7 +3794,7 @@
     </node>
     <node>
         <id>ntp</id>
-        <class>com.netconfessor.gen.apConfig.config.dateTime.Ntp</class>
+        <class>io.netconfessor.gen.apConfig.config.dateTime.Ntp</class>
         <tagpath>/config/date-time/ntp/</tagpath>
         <tagname>ntp</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3807,7 +3807,7 @@
     </node>
     <node>
         <id>server</id>
-        <class>com.netconfessor.gen.apConfig.config.dateTime.ntp.Server</class>
+        <class>io.netconfessor.gen.apConfig.config.dateTime.ntp.Server</class>
         <tagpath>/config/date-time/ntp/server/</tagpath>
         <tagname>server</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3821,7 +3821,7 @@
     </node>
     <node>
         <id>trace</id>
-        <class>com.netconfessor.gen.apConfig.config.Trace</class>
+        <class>io.netconfessor.gen.apConfig.config.Trace</class>
         <tagpath>/config/trace/</tagpath>
         <tagname>trace</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3834,7 +3834,7 @@
     </node>
     <node>
         <id>networkd</id>
-        <class>com.netconfessor.gen.apConfig.config.trace.Networkd</class>
+        <class>io.netconfessor.gen.apConfig.config.trace.Networkd</class>
         <tagpath>/config/trace/networkd/</tagpath>
         <tagname>networkd</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3847,7 +3847,7 @@
     </node>
     <node>
         <id>error</id>
-        <class>com.netconfessor.gen.apConfig.config.trace.networkd.Error</class>
+        <class>io.netconfessor.gen.apConfig.config.trace.networkd.Error</class>
         <tagpath>/config/trace/networkd/error/</tagpath>
         <tagname>error</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3861,7 +3861,7 @@
     </node>
     <node>
         <id>warn</id>
-        <class>com.netconfessor.gen.apConfig.config.trace.networkd.Warn</class>
+        <class>io.netconfessor.gen.apConfig.config.trace.networkd.Warn</class>
         <tagpath>/config/trace/networkd/warn/</tagpath>
         <tagname>warn</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3875,7 +3875,7 @@
     </node>
     <node>
         <id>info</id>
-        <class>com.netconfessor.gen.apConfig.config.trace.networkd.Info</class>
+        <class>io.netconfessor.gen.apConfig.config.trace.networkd.Info</class>
         <tagpath>/config/trace/networkd/info/</tagpath>
         <tagname>info</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3889,7 +3889,7 @@
     </node>
     <node>
         <id>debug</id>
-        <class>com.netconfessor.gen.apConfig.config.trace.networkd.Debug</class>
+        <class>io.netconfessor.gen.apConfig.config.trace.networkd.Debug</class>
         <tagpath>/config/trace/networkd/debug/</tagpath>
         <tagname>debug</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3903,7 +3903,7 @@
     </node>
     <node>
         <id>traffic</id>
-        <class>com.netconfessor.gen.apConfig.config.trace.networkd.Traffic</class>
+        <class>io.netconfessor.gen.apConfig.config.trace.networkd.Traffic</class>
         <tagpath>/config/trace/networkd/traffic/</tagpath>
         <tagname>traffic</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3917,7 +3917,7 @@
     </node>
     <node>
         <id>system</id>
-        <class>com.netconfessor.gen.apConfig.config.System</class>
+        <class>io.netconfessor.gen.apConfig.config.System</class>
         <tagpath>/config/system/</tagpath>
         <tagname>system</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3930,7 +3930,7 @@
     </node>
     <node>
         <id>globalStationIsolation</id>
-        <class>com.netconfessor.gen.apConfig.config.system.GlobalStationIsolation</class>
+        <class>io.netconfessor.gen.apConfig.config.system.GlobalStationIsolation</class>
         <tagpath>/config/system/global-station-isolation/</tagpath>
         <tagname>global-station-isolation</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3944,7 +3944,7 @@
     </node>
     <node>
         <id>route</id>
-        <class>com.netconfessor.gen.apConfig.config.Route</class>
+        <class>io.netconfessor.gen.apConfig.config.Route</class>
         <tagpath>/config/route/</tagpath>
         <tagname>route</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3958,7 +3958,7 @@
     </node>
     <node>
         <id>name</id>
-        <class>com.netconfessor.gen.apConfig.config.route.Name</class>
+        <class>io.netconfessor.gen.apConfig.config.route.Name</class>
         <tagpath>/config/route/name/</tagpath>
         <tagname>name</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3972,7 +3972,7 @@
     </node>
     <node>
         <id>destination</id>
-        <class>com.netconfessor.gen.apConfig.config.route.Destination</class>
+        <class>io.netconfessor.gen.apConfig.config.route.Destination</class>
         <tagpath>/config/route/destination/</tagpath>
         <tagname>destination</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -3986,7 +3986,7 @@
     </node>
     <node>
         <id>netmask</id>
-        <class>com.netconfessor.gen.apConfig.config.route.Netmask</class>
+        <class>io.netconfessor.gen.apConfig.config.route.Netmask</class>
         <tagpath>/config/route/netmask/</tagpath>
         <tagname>netmask</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4000,7 +4000,7 @@
     </node>
     <node>
         <id>gateway</id>
-        <class>com.netconfessor.gen.apConfig.config.route.Gateway</class>
+        <class>io.netconfessor.gen.apConfig.config.route.Gateway</class>
         <tagpath>/config/route/gateway/</tagpath>
         <tagname>gateway</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4014,7 +4014,7 @@
     </node>
     <node>
         <id>monitoring</id>
-        <class>com.netconfessor.gen.apConfig.Monitoring</class>
+        <class>io.netconfessor.gen.apConfig.Monitoring</class>
         <tagpath>/monitoring/</tagpath>
         <tagname>monitoring</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4027,7 +4027,7 @@
     </node>
     <node>
         <id>arp</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.Arp</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.Arp</class>
         <tagpath>/monitoring/arp/</tagpath>
         <tagname>arp</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4041,7 +4041,7 @@
     </node>
     <node>
         <id>name</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.arp.Name</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.arp.Name</class>
         <tagpath>/monitoring/arp/name/</tagpath>
         <tagname>name</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4054,7 +4054,7 @@
     </node>
     <node>
         <id>ip</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.arp.Ip</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.arp.Ip</class>
         <tagpath>/monitoring/arp/ip/</tagpath>
         <tagname>ip</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4067,7 +4067,7 @@
     </node>
     <node>
         <id>mac</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.arp.Mac</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.arp.Mac</class>
         <tagpath>/monitoring/arp/mac/</tagpath>
         <tagname>mac</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4080,7 +4080,7 @@
     </node>
     <node>
         <id>route</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.Route</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.Route</class>
         <tagpath>/monitoring/route/</tagpath>
         <tagname>route</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4094,7 +4094,7 @@
     </node>
     <node>
         <id>name</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.route.Name</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.route.Name</class>
         <tagpath>/monitoring/route/name/</tagpath>
         <tagname>name</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4107,7 +4107,7 @@
     </node>
     <node>
         <id>interface_</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.route.JInterface</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.route.JInterface</class>
         <tagpath>/monitoring/route/interface/</tagpath>
         <tagname>interface</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4120,7 +4120,7 @@
     </node>
     <node>
         <id>destination</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.route.Destination</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.route.Destination</class>
         <tagpath>/monitoring/route/destination/</tagpath>
         <tagname>destination</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4133,7 +4133,7 @@
     </node>
     <node>
         <id>gateway</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.route.Gateway</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.route.Gateway</class>
         <tagpath>/monitoring/route/gateway/</tagpath>
         <tagname>gateway</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4146,7 +4146,7 @@
     </node>
     <node>
         <id>mask</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.route.Mask</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.route.Mask</class>
         <tagpath>/monitoring/route/mask/</tagpath>
         <tagname>mask</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4159,7 +4159,7 @@
     </node>
     <node>
         <id>flags</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.route.Flags</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.route.Flags</class>
         <tagpath>/monitoring/route/flags/</tagpath>
         <tagname>flags</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4172,7 +4172,7 @@
     </node>
     <node>
         <id>wifiClient</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.WifiClient</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.WifiClient</class>
         <tagpath>/monitoring/wifi-client/</tagpath>
         <tagname>wifi-client</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4186,7 +4186,7 @@
     </node>
     <node>
         <id>name</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.Name</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.Name</class>
         <tagpath>/monitoring/wifi-client/name/</tagpath>
         <tagname>name</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4199,7 +4199,7 @@
     </node>
     <node>
         <id>hwAddr</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.HwAddr</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.HwAddr</class>
         <tagpath>/monitoring/wifi-client/hw-addr/</tagpath>
         <tagname>hw-addr</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4212,7 +4212,7 @@
     </node>
     <node>
         <id>rssi</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.Rssi</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.Rssi</class>
         <tagpath>/monitoring/wifi-client/rssi/</tagpath>
         <tagname>rssi</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4225,7 +4225,7 @@
     </node>
     <node>
         <id>snr</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.Snr</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.Snr</class>
         <tagpath>/monitoring/wifi-client/snr/</tagpath>
         <tagname>snr</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4238,7 +4238,7 @@
     </node>
     <node>
         <id>txRate</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.TxRate</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.TxRate</class>
         <tagpath>/monitoring/wifi-client/tx-rate/</tagpath>
         <tagname>tx-rate</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4251,7 +4251,7 @@
     </node>
     <node>
         <id>rxRate</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.RxRate</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.RxRate</class>
         <tagpath>/monitoring/wifi-client/rx-rate/</tagpath>
         <tagname>rx-rate</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4264,7 +4264,7 @@
     </node>
     <node>
         <id>txBw</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.TxBw</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.TxBw</class>
         <tagpath>/monitoring/wifi-client/tx-bw/</tagpath>
         <tagname>tx-bw</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4277,7 +4277,7 @@
     </node>
     <node>
         <id>rxBw</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.RxBw</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.RxBw</class>
         <tagpath>/monitoring/wifi-client/rx-bw/</tagpath>
         <tagname>rx-bw</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4290,7 +4290,7 @@
     </node>
     <node>
         <id>txBytes</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.TxBytes</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.TxBytes</class>
         <tagpath>/monitoring/wifi-client/tx-bytes/</tagpath>
         <tagname>tx-bytes</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4303,7 +4303,7 @@
     </node>
     <node>
         <id>rxBytes</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.RxBytes</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.RxBytes</class>
         <tagpath>/monitoring/wifi-client/rx-bytes/</tagpath>
         <tagname>rx-bytes</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4316,7 +4316,7 @@
     </node>
     <node>
         <id>txPackets</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.TxPackets</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.TxPackets</class>
         <tagpath>/monitoring/wifi-client/tx-packets/</tagpath>
         <tagname>tx-packets</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4329,7 +4329,7 @@
     </node>
     <node>
         <id>rxPackets</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wifiClient.RxPackets</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wifiClient.RxPackets</class>
         <tagpath>/monitoring/wifi-client/rx-packets/</tagpath>
         <tagname>rx-packets</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4342,7 +4342,7 @@
     </node>
     <node>
         <id>wanStatus</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.WanStatus</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.WanStatus</class>
         <tagpath>/monitoring/wan-status/</tagpath>
         <tagname>wan-status</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4355,7 +4355,7 @@
     </node>
     <node>
         <id>interface_</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wanStatus.JInterface</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wanStatus.JInterface</class>
         <tagpath>/monitoring/wan-status/interface/</tagpath>
         <tagname>interface</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4368,7 +4368,7 @@
     </node>
     <node>
         <id>protocol</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wanStatus.Protocol</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wanStatus.Protocol</class>
         <tagpath>/monitoring/wan-status/protocol/</tagpath>
         <tagname>protocol</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4381,7 +4381,7 @@
     </node>
     <node>
         <id>ipAddress</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wanStatus.IpAddress</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wanStatus.IpAddress</class>
         <tagpath>/monitoring/wan-status/ip-address/</tagpath>
         <tagname>ip-address</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4394,7 +4394,7 @@
     </node>
     <node>
         <id>txBytes</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wanStatus.TxBytes</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wanStatus.TxBytes</class>
         <tagpath>/monitoring/wan-status/tx-bytes/</tagpath>
         <tagname>tx-bytes</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4407,7 +4407,7 @@
     </node>
     <node>
         <id>rxBytes</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.wanStatus.RxBytes</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.wanStatus.RxBytes</class>
         <tagpath>/monitoring/wan-status/rx-bytes/</tagpath>
         <tagname>rx-bytes</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4420,7 +4420,7 @@
     </node>
     <node>
         <id>ethernet</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.Ethernet</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.Ethernet</class>
         <tagpath>/monitoring/ethernet/</tagpath>
         <tagname>ethernet</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4433,7 +4433,7 @@
     </node>
     <node>
         <id>link</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.ethernet.Link</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.ethernet.Link</class>
         <tagpath>/monitoring/ethernet/link/</tagpath>
         <tagname>link</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4446,7 +4446,7 @@
     </node>
     <node>
         <id>speed</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.ethernet.Speed</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.ethernet.Speed</class>
         <tagpath>/monitoring/ethernet/speed/</tagpath>
         <tagname>speed</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4459,7 +4459,7 @@
     </node>
     <node>
         <id>duplex</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.ethernet.Duplex</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.ethernet.Duplex</class>
         <tagpath>/monitoring/ethernet/duplex/</tagpath>
         <tagname>duplex</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4472,7 +4472,7 @@
     </node>
     <node>
         <id>txBytes</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.ethernet.TxBytes</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.ethernet.TxBytes</class>
         <tagpath>/monitoring/ethernet/tx-bytes/</tagpath>
         <tagname>tx-bytes</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4485,7 +4485,7 @@
     </node>
     <node>
         <id>rxBytes</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.ethernet.RxBytes</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.ethernet.RxBytes</class>
         <tagpath>/monitoring/ethernet/rx-bytes/</tagpath>
         <tagname>rx-bytes</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4498,7 +4498,7 @@
     </node>
     <node>
         <id>sfp</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.Sfp</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.Sfp</class>
         <tagpath>/monitoring/sfp/</tagpath>
         <tagname>sfp</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4511,7 +4511,7 @@
     </node>
     <node>
         <id>status</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.sfp.Status</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.sfp.Status</class>
         <tagpath>/monitoring/sfp/status/</tagpath>
         <tagname>status</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4524,7 +4524,7 @@
     </node>
     <node>
         <id>link</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.sfp.Link</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.sfp.Link</class>
         <tagpath>/monitoring/sfp/link/</tagpath>
         <tagname>link</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4537,7 +4537,7 @@
     </node>
     <node>
         <id>txFault</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.sfp.TxFault</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.sfp.TxFault</class>
         <tagpath>/monitoring/sfp/tx-fault/</tagpath>
         <tagname>tx-fault</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4550,7 +4550,7 @@
     </node>
     <node>
         <id>los</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.sfp.Los</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.sfp.Los</class>
         <tagpath>/monitoring/sfp/los/</tagpath>
         <tagname>los</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4563,7 +4563,7 @@
     </node>
     <node>
         <id>i2cData</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.sfp.I2cData</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.sfp.I2cData</class>
         <tagpath>/monitoring/sfp/i2c-data/</tagpath>
         <tagname>i2c-data</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4576,7 +4576,7 @@
     </node>
     <node>
         <id>speed</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.sfp.Speed</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.sfp.Speed</class>
         <tagpath>/monitoring/sfp/speed/</tagpath>
         <tagname>speed</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4589,7 +4589,7 @@
     </node>
     <node>
         <id>volt</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.sfp.Volt</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.sfp.Volt</class>
         <tagpath>/monitoring/sfp/volt/</tagpath>
         <tagname>volt</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4602,7 +4602,7 @@
     </node>
     <node>
         <id>temperature</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.sfp.Temperature</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.sfp.Temperature</class>
         <tagpath>/monitoring/sfp/temperature/</tagpath>
         <tagname>temperature</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4615,7 +4615,7 @@
     </node>
     <node>
         <id>current</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.sfp.Current</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.sfp.Current</class>
         <tagpath>/monitoring/sfp/current/</tagpath>
         <tagname>current</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4628,7 +4628,7 @@
     </node>
     <node>
         <id>ptx</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.sfp.Ptx</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.sfp.Ptx</class>
         <tagpath>/monitoring/sfp/ptx/</tagpath>
         <tagname>ptx</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4641,7 +4641,7 @@
     </node>
     <node>
         <id>prx</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.sfp.Prx</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.sfp.Prx</class>
         <tagpath>/monitoring/sfp/prx/</tagpath>
         <tagname>prx</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4654,7 +4654,7 @@
     </node>
     <node>
         <id>information</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.Information</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.Information</class>
         <tagpath>/monitoring/information/</tagpath>
         <tagname>information</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4667,7 +4667,7 @@
     </node>
     <node>
         <id>systemTime</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.SystemTime</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.SystemTime</class>
         <tagpath>/monitoring/information/system-time/</tagpath>
         <tagname>system-time</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4680,7 +4680,7 @@
     </node>
     <node>
         <id>uptime</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.Uptime</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.Uptime</class>
         <tagpath>/monitoring/information/uptime/</tagpath>
         <tagname>uptime</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4693,7 +4693,7 @@
     </node>
     <node>
         <id>softwareVersion</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.SoftwareVersion</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.SoftwareVersion</class>
         <tagpath>/monitoring/information/software-version/</tagpath>
         <tagname>software-version</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4706,7 +4706,7 @@
     </node>
     <node>
         <id>secondarySoftwareVersion</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.SecondarySoftwareVersion</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.SecondarySoftwareVersion</class>
         <tagpath>/monitoring/information/secondary-software-version/</tagpath>
         <tagname>secondary-software-version</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4719,7 +4719,7 @@
     </node>
     <node>
         <id>bootVersion</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.BootVersion</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.BootVersion</class>
         <tagpath>/monitoring/information/boot-version/</tagpath>
         <tagname>boot-version</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4732,7 +4732,7 @@
     </node>
     <node>
         <id>boardType</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.BoardType</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.BoardType</class>
         <tagpath>/monitoring/information/board-type/</tagpath>
         <tagname>board-type</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4745,7 +4745,7 @@
     </node>
     <node>
         <id>hwPlatform</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.HwPlatform</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.HwPlatform</class>
         <tagpath>/monitoring/information/hw-platform/</tagpath>
         <tagname>hw-platform</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4758,7 +4758,7 @@
     </node>
     <node>
         <id>factoryWanMac</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.FactoryWanMac</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.FactoryWanMac</class>
         <tagpath>/monitoring/information/factory-wan-mac/</tagpath>
         <tagname>factory-wan-mac</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4771,7 +4771,7 @@
     </node>
     <node>
         <id>factoryLanMac</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.FactoryLanMac</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.FactoryLanMac</class>
         <tagpath>/monitoring/information/factory-lan-mac/</tagpath>
         <tagname>factory-lan-mac</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4784,7 +4784,7 @@
     </node>
     <node>
         <id>factorySerialNumber</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.FactorySerialNumber</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.FactorySerialNumber</class>
         <tagpath>/monitoring/information/factory-serial-number/</tagpath>
         <tagname>factory-serial-number</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4797,7 +4797,7 @@
     </node>
     <node>
         <id>hwRevision</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.HwRevision</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.HwRevision</class>
         <tagpath>/monitoring/information/hw-revision/</tagpath>
         <tagname>hw-revision</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4810,7 +4810,7 @@
     </node>
     <node>
         <id>internetConnectionStatus</id>
-        <class>com.netconfessor.gen.apConfig.monitoring.information.InternetConnectionStatus</class>
+        <class>io.netconfessor.gen.apConfig.monitoring.information.InternetConnectionStatus</class>
         <tagpath>/monitoring/information/internet-connection-status/</tagpath>
         <tagname>internet-connection-status</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4823,7 +4823,7 @@
     </node>
     <node>
         <id>lastWlanScanResults</id>
-        <class>com.netconfessor.gen.apConfig.LastWlanScanResults</class>
+        <class>io.netconfessor.gen.apConfig.LastWlanScanResults</class>
         <tagpath>/last-wlan-scan-results/</tagpath>
         <tagname>last-wlan-scan-results</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4836,7 +4836,7 @@
     </node>
     <node>
         <id>cell</id>
-        <class>com.netconfessor.gen.apConfig.lastWlanScanResults.Cell</class>
+        <class>io.netconfessor.gen.apConfig.lastWlanScanResults.Cell</class>
         <tagpath>/last-wlan-scan-results/cell/</tagpath>
         <tagname>cell</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4850,7 +4850,7 @@
     </node>
     <node>
         <id>name</id>
-        <class>com.netconfessor.gen.apConfig.lastWlanScanResults.cell.Name</class>
+        <class>io.netconfessor.gen.apConfig.lastWlanScanResults.cell.Name</class>
         <tagpath>/last-wlan-scan-results/cell/name/</tagpath>
         <tagname>name</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4863,7 +4863,7 @@
     </node>
     <node>
         <id>bssid</id>
-        <class>com.netconfessor.gen.apConfig.lastWlanScanResults.cell.Bssid</class>
+        <class>io.netconfessor.gen.apConfig.lastWlanScanResults.cell.Bssid</class>
         <tagpath>/last-wlan-scan-results/cell/bssid/</tagpath>
         <tagname>bssid</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4876,7 +4876,7 @@
     </node>
     <node>
         <id>ssid</id>
-        <class>com.netconfessor.gen.apConfig.lastWlanScanResults.cell.Ssid</class>
+        <class>io.netconfessor.gen.apConfig.lastWlanScanResults.cell.Ssid</class>
         <tagpath>/last-wlan-scan-results/cell/ssid/</tagpath>
         <tagname>ssid</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4889,7 +4889,7 @@
     </node>
     <node>
         <id>channel</id>
-        <class>com.netconfessor.gen.apConfig.lastWlanScanResults.cell.Channel</class>
+        <class>io.netconfessor.gen.apConfig.lastWlanScanResults.cell.Channel</class>
         <tagpath>/last-wlan-scan-results/cell/channel/</tagpath>
         <tagname>channel</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4902,7 +4902,7 @@
     </node>
     <node>
         <id>signalLevel</id>
-        <class>com.netconfessor.gen.apConfig.lastWlanScanResults.cell.SignalLevel</class>
+        <class>io.netconfessor.gen.apConfig.lastWlanScanResults.cell.SignalLevel</class>
         <tagpath>/last-wlan-scan-results/cell/signal-level/</tagpath>
         <tagname>signal-level</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4915,7 +4915,7 @@
     </node>
     <node>
         <id>security</id>
-        <class>com.netconfessor.gen.apConfig.lastWlanScanResults.cell.Security</class>
+        <class>io.netconfessor.gen.apConfig.lastWlanScanResults.cell.Security</class>
         <tagpath>/last-wlan-scan-results/cell/security/</tagpath>
         <tagname>security</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4928,7 +4928,7 @@
     </node>
     <node>
         <id>upgradeFirmwareFinished</id>
-        <class>com.netconfessor.gen.apConfig.UpgradeFirmwareFinished</class>
+        <class>io.netconfessor.gen.apConfig.UpgradeFirmwareFinished</class>
         <tagpath>/upgrade-firmware-finished/</tagpath>
         <tagname>upgrade-firmware-finished</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4941,7 +4941,7 @@
     </node>
     <node>
         <id>status</id>
-        <class>com.netconfessor.gen.apConfig.upgradeFirmwareFinished.Status</class>
+        <class>io.netconfessor.gen.apConfig.upgradeFirmwareFinished.Status</class>
         <tagpath>/upgrade-firmware-finished/status/</tagpath>
         <tagname>status</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4954,7 +4954,7 @@
     </node>
     <node>
         <id>wlanScanFinished</id>
-        <class>com.netconfessor.gen.apConfig.WlanScanFinished</class>
+        <class>io.netconfessor.gen.apConfig.WlanScanFinished</class>
         <tagpath>/wlan-scan-finished/</tagpath>
         <tagname>wlan-scan-finished</tagname>
         <namespace>http://eltex.org/ap</namespace>
@@ -4967,7 +4967,7 @@
     </node>
     <node>
         <id>status</id>
-        <class>com.netconfessor.gen.apConfig.wlanScanFinished.Status</class>
+        <class>io.netconfessor.gen.apConfig.wlanScanFinished.Status</class>
         <tagpath>/wlan-scan-finished/status/</tagpath>
         <tagname>status</tagname>
         <namespace>http://eltex.org/ap</namespace>

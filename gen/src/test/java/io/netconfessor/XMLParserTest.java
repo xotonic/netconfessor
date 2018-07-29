@@ -1,8 +1,8 @@
 package io.netconfessor;
 
 
-import com.netconfessor.gen.apConfig.ApConfigSchema;
-import com.netconfessor.gen.ietfInetTypes.InetSchema;
+import io.netconfessor.gen.apConfig.ApConfigSchema;
+import io.netconfessor.gen.ietfInetTypes.InetSchema;
 import org.junit.Before;
 import org.junit.Test;
 

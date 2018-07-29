@@ -1,12 +1,12 @@
 package io.netconfessor.robocop;
 
-import com.netconfessor.gen.robocop.*;
-import com.netconfessor.gen.robocop.ammo.PistolAmmo;
-import com.netconfessor.gen.robocop.ammo.RocketAmmo;
-import com.netconfessor.gen.robocop.primeDirectives.Directive;
-import com.netconfessor.gen.robocop.primeDirectives.DirectiveVisitor;
-import com.netconfessor.gen.robocop.primeDirectives.directive.Code;
-import com.netconfessor.gen.robocop.primeDirectives.directive.Enabled;
+import io.netconfessor.gen.robocop.*;
+import io.netconfessor.gen.robocop.ammo.PistolAmmo;
+import io.netconfessor.gen.robocop.ammo.RocketAmmo;
+import io.netconfessor.gen.robocop.primeDirectives.Directive;
+import io.netconfessor.gen.robocop.primeDirectives.DirectiveVisitor;
+import io.netconfessor.gen.robocop.primeDirectives.directive.Code;
+import io.netconfessor.gen.robocop.primeDirectives.directive.Enabled;
 import io.netconfessor.YangData;
 
 

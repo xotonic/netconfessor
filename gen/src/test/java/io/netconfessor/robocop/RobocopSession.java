@@ -1,6 +1,6 @@
 package io.netconfessor.robocop;
 
-import com.netconfessor.gen.robocop.RobocopSchema;
+import io.netconfessor.gen.robocop.RobocopSchema;
 import io.netconfessor.Device;
 
 import io.netconfessor.DeviceUser;

@@ -15,7 +15,7 @@
     </node>
     <node>
         <id>ammo</id>
-        <class>com.netconfessor.gen.robocop.Ammo</class>
+        <class>io.netconfessor.gen.robocop.Ammo</class>
         <tagpath>/ammo/</tagpath>
         <tagname>ammo</tagname>
         <namespace>jnc:test:robocop</namespace>
@@ -28,7 +28,7 @@
     </node>
     <node>
         <id>pistolAmmo</id>
-        <class>com.netconfessor.gen.robocop.ammo.PistolAmmo</class>
+        <class>io.netconfessor.gen.robocop.ammo.PistolAmmo</class>
         <tagpath>/ammo/pistol-ammo/</tagpath>
         <tagname>pistol-ammo</tagname>
         <namespace>jnc:test:robocop</namespace>
@@ -42,7 +42,7 @@
     </node>
     <node>
         <id>rocketAmmo</id>
-        <class>com.netconfessor.gen.robocop.ammo.RocketAmmo</class>
+        <class>io.netconfessor.gen.robocop.ammo.RocketAmmo</class>
         <tagpath>/ammo/rocket-ammo/</tagpath>
         <tagname>rocket-ammo</tagname>
         <namespace>jnc:test:robocop</namespace>
@@ -56,7 +56,7 @@
     </node>
     <node>
         <id>primeDirectives</id>
-        <class>com.netconfessor.gen.robocop.PrimeDirectives</class>
+        <class>io.netconfessor.gen.robocop.PrimeDirectives</class>
         <tagpath>/prime-directives/</tagpath>
         <tagname>prime-directives</tagname>
         <namespace>jnc:test:robocop</namespace>
@@ -69,7 +69,7 @@
     </node>
     <node>
         <id>directive</id>
-        <class>com.netconfessor.gen.robocop.primeDirectives.Directive</class>
+        <class>io.netconfessor.gen.robocop.primeDirectives.Directive</class>
         <tagpath>/prime-directives/directive/</tagpath>
         <tagname>directive</tagname>
         <namespace>jnc:test:robocop</namespace>
@@ -83,7 +83,7 @@
     </node>
     <node>
         <id>code</id>
-        <class>com.netconfessor.gen.robocop.primeDirectives.directive.Code</class>
+        <class>io.netconfessor.gen.robocop.primeDirectives.directive.Code</class>
         <tagpath>/prime-directives/directive/code/</tagpath>
         <tagname>code</tagname>
         <namespace>jnc:test:robocop</namespace>
@@ -96,7 +96,7 @@
     </node>
     <node>
         <id>enabled</id>
-        <class>com.netconfessor.gen.robocop.primeDirectives.directive.Enabled</class>
+        <class>io.netconfessor.gen.robocop.primeDirectives.directive.Enabled</class>
         <tagpath>/prime-directives/directive/enabled/</tagpath>
         <tagname>enabled</tagname>
         <namespace>jnc:test:robocop</namespace>
@@ -109,7 +109,7 @@
     </node>
     <node>
         <id>offenseDetected</id>
-        <class>com.netconfessor.gen.robocop.OffenseDetected</class>
+        <class>io.netconfessor.gen.robocop.OffenseDetected</class>
         <tagpath>/offense-detected/</tagpath>
         <tagname>offense-detected</tagname>
         <namespace>jnc:test:robocop</namespace>
@@ -122,7 +122,7 @@
     </node>
     <node>
         <id>offender</id>
-        <class>com.netconfessor.gen.robocop.offenseDetected.Offender</class>
+        <class>io.netconfessor.gen.robocop.offenseDetected.Offender</class>
         <tagpath>/offense-detected/offender/</tagpath>
         <tagname>offender</tagname>
         <namespace>jnc:test:robocop</namespace>

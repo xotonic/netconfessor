@@ -1,8 +1,8 @@
 package io.netconfessor.robocop;
 
-import com.netconfessor.gen.robocop.Ammo;
-import com.netconfessor.gen.robocop.PrimeDirectives;
-import com.netconfessor.gen.robocop.RobocopSchema;
+import io.netconfessor.gen.robocop.Ammo;
+import io.netconfessor.gen.robocop.PrimeDirectives;
+import io.netconfessor.gen.robocop.RobocopSchema;
 import io.netconfessor.*;
 
 import io.netconfessor.robocop.ocp.OCPTransport;
