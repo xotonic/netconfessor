@@ -1,4 +1,10 @@
 # netconfessor
+
+
+[![Build Status](https://travis-ci.org/xotonic/netconfessor.svg?branch=master)](https://travis-ci.org/xotonic/netconfessor)
+[![codecov](https://codecov.io/gh/xotonic/netconfessor/branch/master/graph/badge.svg)](https://codecov.io/gh/xotonic/netconfessor)
+
+
 Netconfessor is fork of discontinued JNC from Tail-f Systems (c)
 
 Netconfessor is [NETCONF protocol](https://tools.ietf.org/html/rfc6241) client. 
