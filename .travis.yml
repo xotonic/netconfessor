@@ -7,7 +7,7 @@ addons:
     - python-pip
 
 before_install:
-  - pip install pyang==1.7.3
+  - sudo pip install pyang==1.7.3
 
 install:
   - gradle check --info
