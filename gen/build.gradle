@@ -23,45 +23,44 @@ task yang {
     project.convention.getPlugin(JavaPluginConvention.class).sourceSets.all { SourceSet sourceSet ->
 
 
-        String taskName = sourceSet.getTaskName('generate', 'Yang')
+        def taskName = sourceSet.getTaskName('generate', 'Yang')
 
         def sourceSetSrc = "${project.projectDir}/src/${sourceSet.getName()}"
         def srcDir = sourceSetSrc + "/yang"
         def genDir = sourceSetSrc + "/java/${rootPackage.join("/")}"
         def genRes = sourceSetSrc + "/resources"
 
-
-        HashSet<String> yangs = [
-                "ap-config.yang", // wop-2ac-lr5
+        def yangs = [
                 "ietf-inet-types.yang", // ap-config depends on it
                 "robocop.yang" // test device
         ]
-
         project.task(taskName) {
 
             println "Executing task $name. Scan dir: ${srcDir}"
 
+
+            def sourceSetYangs = []
+
             file(srcDir)
                     .listFiles({ file -> file.isFile() && yangs.contains(file.name) } as FileFilter)
                     .sort()
-                    .each { File file ->
+                    .each { file -> sourceSetYangs.push(file.path) }
 
-                println "Processing  $file.name"
+            exec {
 
-                project.pluginManager
+                def opts = ["/usr/local/bin/pyang",
+                        "--lax-quote-checks",
+                        "-p", srcDir,
+                        "--plugindir", "$projectDir/tools",
+                        "--format", "jnc",
+                        "--jnc-no-pkginfo",
+                        "--jnc-classpath-schema-loading", genRes,
+                        "--jnc-output", genDir,
+                        "--jnc-package", rootPackage.join(".")]
 
-                exec {
-                    commandLine "/usr/local/bin/pyang",
-                            "--lax-quote-checks",
-                            "-p", srcDir,
-                            "--plugindir", "$projectDir/tools",
-                            "--format", "jnc",
-                            "--jnc-no-pkginfo",
-                            "--jnc-classpath-schema-loading", genRes,
-                            "--jnc-output", genDir,
-                            "--jnc-package", rootPackage.join("."),
-                            file.path
-                }
+                opts.addAll(sourceSetYangs)
+
+                commandLine opts
             }
         }
         project.tasks.getByName(sourceSet.getCompileJavaTaskName()).dependsOn(taskName)

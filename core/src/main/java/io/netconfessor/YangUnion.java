@@ -25,6 +25,10 @@ public class YangUnion extends YangBaseType<YangType<?>> {
      */
     private String[] memberTypes;
 
+    public YangUnion(String value) {
+        this(value, new String[] {});
+    }
+
     /**
      * Creates a YangUnion object from a java.lang.String representing a value
      * of one of the member types.

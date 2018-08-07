@@ -20,6 +20,10 @@ public class YangEnumeration extends YangBaseString {
      */
     private String[] enums;
 
+    public YangEnumeration(String value) {
+        this(value, new String[] {});
+    }
+
     /**
      * Creates an YangEnumeration object given an enum (as a String) and an
      * array of the allowed enum names.
@@ -54,6 +58,10 @@ public class YangEnumeration extends YangBaseString {
             System.err.println(subclass + " is not subclass of " + YangEnumeration.class);
             return new String[0];
         }
+    }
+
+    public static String[] enums() {
+        return new String[] {}; //
     }
 
     /*
