@@ -1,3 +1,4 @@
 src/main/java/io/netconfessor/gen
 src/main/resources
 src/test/java/io/netconfessor/gen
+*.pyc
