@@ -1,6 +1,6 @@
-from tools.jnc_plugin import util
-from tools.jnc_plugin.java_value import JavaValue
-from tools.jnc_plugin.ordered_set import OrderedSet
+import util
+from .java_value import JavaValue
+from .ordered_set import OrderedSet
 
 
 class JavaMethod(JavaValue):

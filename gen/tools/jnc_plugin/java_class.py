@@ -1,8 +1,9 @@
 import collections
 
-from tools.jnc_plugin import util, context
-from tools.jnc_plugin.java_value import JavaValue
-from tools.jnc_plugin.ordered_set import OrderedSet
+import context
+import util
+from .java_value import JavaValue
+from .ordered_set import OrderedSet
 
 
 class JavaClass(object):

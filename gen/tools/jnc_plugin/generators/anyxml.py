@@ -1,4 +1,4 @@
-from tools.jnc_plugin.java_value import JavaValue
+from ..java_value import JavaValue
 from java_method import MethodGenerator
 
 

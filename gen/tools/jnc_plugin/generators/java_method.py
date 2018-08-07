@@ -1,11 +1,11 @@
 import os
 import re
 
-from tools.jnc_plugin import util, context
+from .. import util, context
 
-from tools.jnc_plugin.java_value import JavaValue
-from tools.jnc_plugin.method import JavaMethod
-from tools.jnc_plugin.ordered_set import OrderedSet
+from ..java_value import JavaValue
+from ..method import JavaMethod
+from ..ordered_set import OrderedSet
 
 
 class MethodGenerator(object):

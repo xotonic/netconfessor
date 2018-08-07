@@ -2,12 +2,13 @@ import os
 
 from pyang import statements
 
+import context
+import util
+from generators.java_method import MethodGenerator
+from java_class import JavaClass
+from java_value import JavaValue
+from method import JavaMethod
 from ordered_set import OrderedSet
-from tools.jnc_plugin.generators.java_method import MethodGenerator
-from tools.jnc_plugin.java_class import JavaClass
-from tools.jnc_plugin.java_value import JavaValue
-from tools.jnc_plugin.method import JavaMethod
-from . import util, context
 
 
 class YangType(object):
@@ -181,7 +182,7 @@ class ClassGenerator(object):
                 java_class.imports.add('io.netconfessor.Element')
 
             util.write_file(self.path, java_class.filename,
-                       java_class.as_list(), self.ctx)
+                            java_class.as_list(), self.ctx)
 
         # Generate classes for children and keep track of augmented modules
         for stmt in util.search(self.stmt, list(context.yangelement_stmts | {'augment', 'leaf'})):
@@ -244,7 +245,7 @@ class ClassGenerator(object):
 
             if stmt.keyword in {'list', 'leaf-list'}:
                 method_collect.add_parameter(param_type=pkg(stmt_class), param_name=stmt_id)
-                #method_collect.add_line('%s %s = getNext%s();' % (stmt_class, stmt_id, stmt_class))
+                # method_collect.add_line('%s %s = getNext%s();' % (stmt_class, stmt_id, stmt_class))
                 method_collect.add_line('if (%s == null) {' % stmt_id)
                 method_collect.add_line('    return null;')
                 method_collect.add_line('}')
@@ -271,7 +272,7 @@ class ClassGenerator(object):
                 method_name = 'on' + visitee_name
                 next_visitor = util.visitor_class(visitee_name)
                 visit_method = JavaMethod(
-                    return_type='void', # pkg(next_visitor),
+                    return_type='void',  # pkg(next_visitor),
                     name=method_name)
                 visit_method.add_parameter(visitee_full, keyword)
                 visit_method.add_modifier('public')
@@ -328,7 +329,7 @@ class ClassGenerator(object):
             elif keyword in {'list'}:
                 next_method_name = 'onNext' + visitee_name
                 entry_visitor = util.visitor_class(visitee_name)
-                visit_method = JavaMethod(return_type='void',  #pkg(entry_visitor),
+                visit_method = JavaMethod(return_type='void',  # pkg(entry_visitor),
                                           name=next_method_name)
                 visit_method.add_modifier('public')
                 visit_method.add_modifier('abstract')
@@ -344,8 +345,6 @@ class ClassGenerator(object):
                 visit_method = JavaMethod(return_type='void', name=stop_method_name)
                 visit_method.add_modifier('protected')
                 self.java_class_visitor.add_method(visit_method)
-
-
 
                 if config:
                     collect_get_next_name = 'getNext' + visitee_name
@@ -476,7 +475,6 @@ class ClassGenerator(object):
         self.java_class_visitor.add_method(method_setup_all)
         self.java_class_visitor.add_method(method_collect)
         self.java_class_visitor.add_method(method_visit)
-
 
     def class_fields(self, ns_arg, prefix):
         # Set fields in root class
@@ -749,15 +747,15 @@ class ClassGenerator(object):
     def write_to_file(self):
 
         util.write_file(self.path,
-                   self.filename,
-                   self.java_class.as_list(),
-                   self.ctx)
+                        self.filename,
+                        self.java_class.as_list(),
+                        self.ctx)
 
         if hasattr(self, 'java_class_visitor'):
             util.write_file(self.path,
-                       self.filename_visitor,
-                       self.java_class_visitor.as_list(),
-                       self.ctx)
+                            self.filename_visitor,
+                            self.java_class_visitor.as_list(),
+                            self.ctx)
 
 
 class PackageInfoGenerator(object):
@@ -784,7 +782,7 @@ class PackageInfoGenerator(object):
 
         """
         util.write_file(self.d, 'package-info.java',
-                   self.gen_package_info(), self.ctx)
+                        self.gen_package_info(), self.ctx)
         dirs = filter(lambda s: not s.endswith('.java'), os.listdir(self.d))
         stmts = util.search(self.stmt, context.node_stmts)
         for directory in dirs:
@@ -810,5 +808,3 @@ class PackageInfoGenerator(object):
         """
         module = util.get_module(self.stmt).arg
         return ''.join([context.package_info.format(' ' + module, ''), self.pkg, ';'])
-
-

@@ -1,7 +1,7 @@
 from ..java import util
-from tools.jnc_plugin.java_value import JavaValue
-from tools.jnc_plugin.method import JavaMethod
-from tools.jnc_plugin.generators.java_method import MethodGenerator
+from ..java_value import JavaValue
+from ..method import JavaMethod
+from java_method import MethodGenerator
 
 
 class LeafMethodGenerator(MethodGenerator):

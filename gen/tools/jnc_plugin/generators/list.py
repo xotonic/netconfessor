@@ -1,5 +1,5 @@
 from ..java import util
-from tools.jnc_plugin.generators.java_method import MethodGenerator
+from java_method import MethodGenerator
 
 
 class ListMethodGenerator(MethodGenerator):

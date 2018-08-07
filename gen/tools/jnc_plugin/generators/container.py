@@ -1,7 +1,7 @@
 from ..java import util
 from ..java import MethodGenerator
-from tools.jnc_plugin.java_value import JavaValue
-from tools.jnc_plugin.method import JavaMethod
+from ..java_value import JavaValue
+from ..method import JavaMethod
 
 
 class ContainerMethodGenerator(MethodGenerator):

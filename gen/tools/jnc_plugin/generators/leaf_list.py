@@ -1,6 +1,6 @@
 from ..java import util
-from tools.jnc_plugin.method import JavaMethod
-from tools.jnc_plugin.generators.java_method import MethodGenerator
+from ..method import JavaMethod
+from java_method import MethodGenerator
 
 
 class LeafListMethodGenerator(MethodGenerator):
